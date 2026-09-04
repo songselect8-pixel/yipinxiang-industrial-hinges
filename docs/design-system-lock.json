@@ -1,0 +1,255 @@
+{
+  "status": "LOCKED",
+  "requestedBy": "User lock instruction before Applications page implementation",
+  "recordedAt": "2026-08-31T14:01:49.215Z",
+  "revalidatedAt": "2026-09-02T22:53:59.6791237+08:00",
+  "lockedScopes": [
+    "homepage",
+    "products-center",
+    "product-detail-template",
+    "product-data-structure",
+    "applications-page",
+    "custom-hinges-page",
+    "manufacturing-page",
+    "quality-page",
+    "about-us-page",
+    "contact-page",
+    "resources-center"
+  ],
+  "applicationsPage": {
+    "status": "LOCKED",
+    "approvedAt": "2026-09-01T10:20:21.155Z",
+    "lock": "docs/applications-page-lock.json"
+  },
+  "customHingesExtension": {
+    "status": "LOCKED",
+    "approvedAt": "2026-09-01T13:07:58.138Z",
+    "route": "/custom-hinges",
+    "lock": "docs/custom-hinges-page-lock.json",
+    "compatibilityNote": "Header and footer route awareness plus optional RFQ labels are functional extensions. Existing defaults and locked visual output remain unchanged."
+  },
+  "productsNavigationRepair": {
+    "recordedAt": "2026-09-02T22:05:06.0899935+08:00",
+    "scope": "desktop header Products entry",
+    "behavior": "The Products label links directly to /products. Mouse hover and keyboard ArrowDown continue to expose the existing product mega menu.",
+    "compatibilityNote": "This is a functional navigation repair requested after the final audit. It does not change the locked header styling, spacing, typography, mobile navigation or mega-menu content."
+  },
+  "contract": "docs/design-system.md",
+  "viewportWidths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "files": [
+    {
+      "path": "src/app/globals.css",
+      "sha256": "e1f34265b2ff031db7295539a5731eeabe1634d9b08997ee45c4b8519368c3b7"
+    },
+    {
+      "path": "src/components/sections/Applications.tsx",
+      "sha256": "85f30e87b9c5f6796ea32e3dcd4da63cc1423fb6e1d55fad7d45c6ca20066caa"
+    },
+    {
+      "path": "src/components/sections/TechnicalRange.tsx",
+      "sha256": "26734c022c3481d3ecf55c14a8f7dee6b822835622388a1634069d809462a1da"
+    },
+    {
+      "path": "src/components/sections/FactorySection.tsx",
+      "sha256": "3b92814b45fa5780e3d5b082d2713c0d1204016f288717b9d35c6d10fe64dd88"
+    },
+    {
+      "path": "src/components/sections/QualitySection.tsx",
+      "sha256": "f07e660469cdb9ec945112d4a7f291f15a2fe169b2175e2fddce7af31e9fba28"
+    },
+    {
+      "path": "src/components/sections/CustomManufacturing.tsx",
+      "sha256": "ba00a178a5d8ebf689cbd1a9777602ef9fa1837eea217d1a5907c212ec4615bb"
+    },
+    {
+      "path": "src/components/sections/PackagingSection.tsx",
+      "sha256": "783f2b779b99ead53c63ade5660a407b4c7d5af1e92a303a88ac1db3bbccef6d"
+    },
+    {
+      "path": "src/components/sections/Hero.tsx",
+      "sha256": "66192edbe0a07d8b45087757988bf7cce27cd7105dd8537ca2e8ab2fd897a635"
+    },
+    {
+      "path": "src/components/sections/ProductGrid.tsx",
+      "sha256": "f366933bc87679fa3c704b281e950eff403b0fa99f282bdd6e7cd4b43c0f72bb"
+    },
+    {
+      "path": "src/components/sections/WhyChooseUs.tsx",
+      "sha256": "2af6c4273272b7cd0c1c170bb6019e767e1f4c941218788967504d2de8003b3b"
+    },
+    {
+      "path": "src/components/sections/RFQSection.tsx",
+      "sha256": "6922eb89cf9aadc60ae570c3ff56fcf51cbde1503d36eff64b0c785754651a6e"
+    },
+    {
+      "path": "src/components/products/ProductCard.tsx",
+      "sha256": "43d7c32021583f383adc0bbb08a514bdff8cc2c48a32e90713fec206d1ab7b92"
+    },
+    {
+      "path": "src/components/products/TechnicalTable.tsx",
+      "sha256": "0bb7bec59411027c52a87cf5233da7e9018daf6708c225bb6ce1f64959d11b4a"
+    },
+    {
+      "path": "src/components/navigation/Header.tsx",
+      "sha256": "1487d645036c1bf4bbf06adc839309748dac183aae58cec5ed1573b3df1ac3bd"
+    },
+    {
+      "path": "src/components/navigation/Footer.tsx",
+      "sha256": "b8aaaa97864f9e6c5229809ae837dbe5c63a2a119a218c7ec2dd16601239641a"
+    },
+    {
+      "path": "src/components/inquiry/InquiryProvider.tsx",
+      "sha256": "7c0f48b3705392991993ae2d07060bb258407909eeb05c5dc2062f3034408ae6"
+    },
+    {
+      "path": "src/components/inquiry/RFQForm.tsx",
+      "sha256": "c95621ba3425abf5b0956b4649a047ebbddfb5a1f20b2b663315e02d8da4823f"
+    },
+    {
+      "path": "src/components/ui/SupportingVisual.tsx",
+      "sha256": "bd51e7a0e6ef81754c85b8d231e4f848deba1a9f34cd6d5f9455c49cd158913b"
+    },
+    {
+      "path": "src/components/ui/SectionHeading.tsx",
+      "sha256": "e8da1419afffd998f37df4ab7046dccf193b7d3bdc60eacfcfa9e3b45fb9b530"
+    },
+    {
+      "path": "src/components/ui/Arrow.tsx",
+      "sha256": "16ea5ef338ee86fdeb1d41e9b8ec184fd3f1cc3930c7d620def5da574a5fa9ce"
+    },
+    {
+      "path": "src/data/catalog.ts",
+      "sha256": "f9352c60bf08fc81759b57afc3e0a486a8398432db494cf64ba0ffc19fb10605"
+    },
+    {
+      "path": "src/data/catalog-variants.ts",
+      "sha256": "aef85ae14074f6fa4224eb956408323ab1193bbde0e63f8e596d7354686d07f3"
+    },
+    {
+      "path": "src/data/illustrations.ts",
+      "sha256": "ebe3eab5dff44854f55afead1139f6bf300fbad9640b7a6ab7769c9ecfd10a0a"
+    },
+    {
+      "path": "src/data/site.ts",
+      "sha256": "1825fedd204e10dbf0b8ba8af48d3dfa12502c567aabd5c3c1651de201a79a99"
+    },
+    {
+      "path": "src/app/page.tsx",
+      "sha256": "d466c4fd0df2e45d501d2faac6c3243d86f0512c12db5ceda927c8de93012743"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "3dc86c126d85997de63273ce6d0742e21290b898d32f1204b3d7b73c41b4dbb0"
+    },
+    {
+      "path": "src/data/catalog-overview.ts",
+      "sha256": "c859fc51ca3e3ee9ff0db71acc82f6ac7b10558219ca97771a749136cb9e6b64"
+    },
+    {
+      "path": "src/app/products/page.tsx",
+      "sha256": "688455428a81ee6443eed7e5e4dfd1523f192ff8f96af4d9bcd23b0be0d83bfa"
+    },
+    {
+      "path": "src/app/products/products.css",
+      "sha256": "e28f6829a613eb21e2073c5aa85683b476e06ff558d68bfac90af69ac6982656"
+    },
+    {
+      "path": "src/components/products/CatalogDialog.tsx",
+      "sha256": "f2ff2fce9927b702db19c8304b88a87b4068ebc9393d555d5dd8d7df5cdd001c"
+    },
+    {
+      "path": "src/components/products/CatalogLink.tsx",
+      "sha256": "05083b02b8092d58830bcb77af7a21d66c2810dde8bbacc002b71f852b8006b9"
+    },
+    {
+      "path": "src/components/products/ProductDimensions.tsx",
+      "sha256": "dcca84a74a58666c361bf87ff3ca363391378866ed5e1a31241e0debe2d4b6e2"
+    },
+    {
+      "path": "src/components/products/ProductFilters.tsx",
+      "sha256": "cd0f593c10b2b764b180708dd6651146dde2e0db2416d0c9324d55ac8bc63869"
+    },
+    {
+      "path": "src/components/products/ProductFinder.tsx",
+      "sha256": "a618cb40fb31b6a96b4c6c3ecbba032c2270caa4df94f824f2cfaf1ac7a85fba"
+    },
+    {
+      "path": "src/components/products/ProductPreview.tsx",
+      "sha256": "52a7229c49741393815e602e87189dcdab3bd0109b660e002d27440fdc147b52"
+    },
+    {
+      "path": "src/data/products.ts",
+      "sha256": "c8b402749774b5de98188cfac1f128ed7431907ef1494d4f50c1747fdca9d555"
+    },
+    {
+      "path": "src/data/product-details.ts",
+      "sha256": "2e2da21a5802f0d303f309bcb238b862652cc083b2bfe3ed6b4d7303659db891"
+    },
+    {
+      "path": "src/data/product-filters.ts",
+      "sha256": "f354a3138c8657bc572e314e305d29b27bb61d5f700284a7ad59040733aafd57"
+    },
+    {
+      "path": "src/data/product-inquiry.ts",
+      "sha256": "7b9027f452c8bf5da03500c805b715335c5b91f32426b9eaad82401c2cb0ef17"
+    },
+    {
+      "path": "src/data/drawing-file.ts",
+      "sha256": "6c983988bee197160b1c579dda2fc65d554ce234ca533548b281c7431226b6e2"
+    },
+    {
+      "path": "docs/research/product-family-source-manifest.json",
+      "sha256": "b3b5fb5f414d0553b430b0df3835b7b17888d5a3f86690eca32ece7fb47fc758"
+    }
+  ],
+  "manufacturingExtension": {
+    "status": "LOCKED",
+    "approvedAt": "2026-09-02T04:58:42.9381524Z",
+    "route": "/manufacturing",
+    "lock": "docs/manufacturing-page-lock.json",
+    "review": "docs/2026-09-01-manufacturing-page-review.md",
+    "compatibilityNote": "Header, footer and navigation data gained Manufacturing route awareness. Existing locked-page defaults and visual classes remain unchanged; the new page CSS is route-scoped."
+  },
+  "qualityExtension": {
+    "status": "LOCKED",
+    "implementedAt": "2026-09-02T05:45:40.4132229Z",
+    "approvedAt": "2026-09-02T14:53:41.2806851+08:00",
+    "route": "/quality",
+    "lock": "docs/quality-page-lock.json",
+    "review": "docs/2026-09-02-quality-page-review.md",
+    "compatibilityNote": "Header, footer and navigation data gained Quality route awareness, and the locked Manufacturing page link now resolves to /quality. Existing visual classes and earlier page compositions remain unchanged; all Quality CSS is route-scoped."
+  },
+  "aboutUsExtension": {
+    "status": "LOCKED",
+    "implementedAt": "2026-09-02T15:25:40.2356909+08:00",
+    "approvedAt": "2026-09-02T10:50:57.6181582Z",
+    "route": "/about-us",
+    "lock": "docs/about-us-page-lock.json",
+    "review": "docs/2026-09-02-about-us-page-review.md",
+    "compatibilityNote": "Header, footer and navigation data gained About Us route awareness. Existing defaults and visual classes remain unchanged; all About Us CSS is route-scoped."
+  },
+  "contactExtension": {
+    "status": "LOCKED",
+    "implementedAt": "2026-09-02T20:31:00+08:00",
+    "approvedAt": "2026-09-02T21:20:55.8263115+08:00",
+    "route": "/contact",
+    "lock": "docs/contact-page-lock.json",
+    "review": "docs/2026-09-02-contact-page-review.md",
+    "configuration": "docs/contact-rfq-configuration.md",
+    "compatibilityNote": "Header, footer and navigation data gained Contact route awareness. Existing defaults and visual classes remain unchanged; Contact CSS is route-scoped. Delivery remains deliberately unconfigured and must retain the honest checked-not-sent state until the production blocker is completed."
+  },
+  "resourcesExtension": {
+    "status": "LOCKED",
+    "implementedAt": "2026-09-02T22:53:59.6791237+08:00",
+    "approvedAt": "2026-09-04T09:47:48.1030259+08:00",
+    "route": "/resources",
+    "lock": "docs/resources-system-lock.json",
+    "review": "docs/2026-09-02-resources-center-review.md",
+    "compatibilityNote": "Resources route awareness, a compact fifth footer column, and approved contextual guide links extend the locked system without changing its visual tokens or page compositions."
+  }
+}

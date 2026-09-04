@@ -1,0 +1,229 @@
+{
+  "status": "LOCKED",
+  "approvedBy": "User approval followed by the final Resources and SEO content audit",
+  "requestedBy": "User request to add the Resources / Article Center before the final development freeze",
+  "recordedAt": "2026-09-02T23:05:26.2707713+08:00",
+  "finalAuditAt": "2026-09-04T09:47:48.1030259+08:00",
+  "routes": [
+    "/resources",
+    "/resources/[slug]",
+    "/feed.xml",
+    "/sitemap.xml"
+  ],
+  "contract": "docs/design-system.md",
+  "publishingGuide": "docs/resources-publishing-guide.md",
+  "sourceCatalog": "铰链/Products show 2026(1).pdf",
+  "sourceCatalogSha256": "35f4881a70cf94c4a4e98e58755a668f5bcaad5b020c10140e05879813aedc33",
+  "categories": [
+    "selection-guides",
+    "application-guides",
+    "technical-guides",
+    "custom-manufacturing",
+    "manufacturing-quality"
+  ],
+  "visibleCategories": [
+    "selection-guides",
+    "application-guides",
+    "technical-guides",
+    "custom-manufacturing"
+  ],
+  "seedArticles": [
+    "how-to-choose-weld-on-hinges",
+    "weld-on-hinge-sizes",
+    "weld-on-hinges-for-gates-trailer-doors-and-ramps",
+    "weld-on-hinges-for-electrical-control-cabinets",
+    "standard-vs-custom-weld-on-hinges",
+    "prepare-hinge-drawing-dimension-request"
+  ],
+  "viewportWidths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "qaEvidence": "output/qa/resources/verification.json",
+  "finalBrowserEvidence": "output/qa/resources/final-browser-audit.json",
+  "preLaunchChecklist": "docs/pre-launch-checklist.md",
+  "articleOrder": [
+    "breadcrumb",
+    "category-and-h1",
+    "introduction-and-date",
+    "table-of-contents",
+    "main-content",
+    "technical-images-and-tables",
+    "key-takeaways",
+    "publisher",
+    "related-products",
+    "related-applications",
+    "related-resources",
+    "selection-support-rfq"
+  ],
+  "rules": [
+    "Do not redesign the locked site or create a separate Resources visual identity.",
+    "Keep article content in the typed data layer; React components render reusable blocks and must not contain one-off article bodies.",
+    "Draft or noindex records must remain absent from the Resources hub, visible categories, related guides, static routes, RSS and sitemap.",
+    "Technical values, product images and drawings must remain tied to one verified product family and source record.",
+    "Do not infer missing dimensions, units, materials, performance, certifications, commercial terms or application relationships.",
+    "Keep supporting industrial illustrations neutrally labeled; do not present them as company personnel, equipment, workshops or customer installations.",
+    "Use only explicit relatedProducts, relatedApplications and relatedArticles mappings.",
+    "Keep the company as publisher unless a verified individual author is later supplied.",
+    "Keep the initial public Resources registry limited to the six approved seed guides unless a later article completes the documented publishing workflow.",
+    "The production sitemap must contain the Resources hub and all public guides without drafts, test records, localhost URLs or 127.0.0.1 URLs; set SITE_URL to the confirmed final HTTPS origin before deployment.",
+    "Preserve the current global pre-launch noindex and robots gate until the controlled production launch.",
+    "RFQ delivery remains checked, not sent until a real server-side destination is connected and tested."
+  ],
+  "files": [
+    {
+      "path": "src/content/resources/types.ts",
+      "sha256": "a19fb5364ce89fffecef696f3a205450aa4c7d8a6e974da7b1b463f40f14f3d4"
+    },
+    {
+      "path": "src/content/resources/categories.ts",
+      "sha256": "e1684d7064e84ff20c4efa8fb928f12ef0098d64a433b63ee4bc732962e997f5"
+    },
+    {
+      "path": "src/content/resources/publishing.ts",
+      "sha256": "a4a6d78688ebe7877b56f151c863c65b02b898358cd2e394f1d6fe6550a23609"
+    },
+    {
+      "path": "src/content/resources/index.ts",
+      "sha256": "45da43159275f6b2223ad16440964db9afdec72abee1e02054c66f4865b9d814"
+    },
+    {
+      "path": "src/content/resources/articles/how-to-choose-weld-on-hinges.ts",
+      "sha256": "84fae727d65c001247afd77b9b32000b9914e4d38745ff9a7c945de2c268f99a"
+    },
+    {
+      "path": "src/content/resources/articles/weld-on-hinge-sizes.ts",
+      "sha256": "4839a990e95ac7374b3efcea5bed252a74214a8e8bc87cb782d4aa87195f0bef"
+    },
+    {
+      "path": "src/content/resources/articles/weld-on-hinges-for-gates-trailer-doors-and-ramps.ts",
+      "sha256": "5c152d14e1e72e2e9dba28f273a3542a6b9a0f49d647505d2e1aacfcb9fadd54"
+    },
+    {
+      "path": "src/content/resources/articles/weld-on-hinges-for-electrical-control-cabinets.ts",
+      "sha256": "cd8d40f2dc89862d3d362e528096530418eae9d0565e8c40e716bb8fcc8245fb"
+    },
+    {
+      "path": "src/content/resources/articles/standard-vs-custom-weld-on-hinges.ts",
+      "sha256": "c36d0fa01218e6cdc4287b30ac1d1bdc0a9ed93e83f6fc049d6e98957baa9670"
+    },
+    {
+      "path": "src/content/resources/articles/prepare-hinge-drawing-dimension-request.ts",
+      "sha256": "97a280358a10494c8055d54770900f403589dd730b0cdbc927d5ea5ddd1b9cc7"
+    },
+    {
+      "path": "src/components/resources/ResourceRichText.tsx",
+      "sha256": "763d34d83da31bd53ace019c32f2ec63205d160f86202683714135f982b27710"
+    },
+    {
+      "path": "src/components/resources/ResourceTechnicalTable.tsx",
+      "sha256": "30e90d6e729314c628948f86e1c3fe414f96bd61a78ae54106602e5108da367f"
+    },
+    {
+      "path": "src/components/resources/ResourceArticleBody.tsx",
+      "sha256": "d500be8bc653d30cf71368e8e242a4c927ab22294fe2541bb5a3a0114b24b19f"
+    },
+    {
+      "path": "src/components/resources/ResourceTableOfContents.tsx",
+      "sha256": "2910e7f9eabe43cc2beeff3d6aa8e73622fbb8f7de44acebd81d16ab1dc39008"
+    },
+    {
+      "path": "src/components/resources/ResourceCard.tsx",
+      "sha256": "80ebcdbd5bf60822a7dcc0ba344205d491d3694ea45d7251da8d46f2bf977e97"
+    },
+    {
+      "path": "src/components/resources/ResourcesIndexContent.tsx",
+      "sha256": "9339b2cb2a6b21bb28929194035c19fa5e7f7562ea3cf6c3e5e6d00656353e93"
+    },
+    {
+      "path": "src/components/resources/ResourceArticleTemplate.tsx",
+      "sha256": "3812684752a011649c9d6fffbc822a7872539b5a9fa0fd7f227b6e7579ee735b"
+    },
+    {
+      "path": "src/app/resources/page.tsx",
+      "sha256": "b776669ba52c5f4861101ecbe8ea0aad01ef02da2d40e4b63dd67f735e57e6d3"
+    },
+    {
+      "path": "src/app/resources/resources.css",
+      "sha256": "ce0cc7cfa46d263e26f1588e5b29964a6860592b642cbedba985a9b9e9946895"
+    },
+    {
+      "path": "src/app/resources/[slug]/page.tsx",
+      "sha256": "61a5169413b44a829dc32e7af64a160beaf2052ca3c9beeecea37ea1779d6629"
+    },
+    {
+      "path": "src/app/resources/[slug]/article.css",
+      "sha256": "fe6fbafea40a6e99f90d553b18fe464029d7c278730ec15fd62b3c3659bb209e"
+    },
+    {
+      "path": "src/app/feed.xml/route.ts",
+      "sha256": "b7825a88f7e8eb889191278ec1e3c0e336cd608e4bd3826e88b135cd5d788246"
+    },
+    {
+      "path": "src/app/sitemap.ts",
+      "sha256": "916bd1f6e49fb8c456960001f9414e6d6b7e142631dfbbd6b0baeea0e15f86d8"
+    },
+    {
+      "path": "src/data/site.ts",
+      "sha256": "1825fedd204e10dbf0b8ba8af48d3dfa12502c567aabd5c3c1651de201a79a99"
+    },
+    {
+      "path": "src/components/navigation/Header.tsx",
+      "sha256": "1487d645036c1bf4bbf06adc839309748dac183aae58cec5ed1573b3df1ac3bd"
+    },
+    {
+      "path": "src/components/navigation/Footer.tsx",
+      "sha256": "b8aaaa97864f9e6c5229809ae837dbe5c63a2a119a218c7ec2dd16601239641a"
+    },
+    {
+      "path": "src/app/globals.css",
+      "sha256": "e1f34265b2ff031db7295539a5731eeabe1634d9b08997ee45c4b8519368c3b7"
+    },
+    {
+      "path": "src/app/products/page.tsx",
+      "sha256": "688455428a81ee6443eed7e5e4dfd1523f192ff8f96af4d9bcd23b0be0d83bfa"
+    },
+    {
+      "path": "src/components/applications/ApplicationsPageContent.tsx",
+      "sha256": "23e9eded6e5e11451c880230419d0a34554ebb1206a172cbbe525f039c01615b"
+    },
+    {
+      "path": "src/components/custom-hinges/CustomHingesPageContent.tsx",
+      "sha256": "009faec56cdcbcfa2f7dc7ee06f0ccf0f62bc564b4e743b55dd97e1ef839303a"
+    },
+    {
+      "path": "src/app/custom-hinges/custom-hinges.css",
+      "sha256": "978d2233ad13d343ca0022ed5706776f824fdf470643d4e1b68a69bcdc3d3ae6"
+    },
+    {
+      "path": "src/components/quality/QualityTechnicalEvidence.tsx",
+      "sha256": "d15eedb9c8cbe6b938d6b53f9f4d32d8a41d2a3da55517f6352c9728a6e27f25"
+    },
+    {
+      "path": "src/app/quality/quality.css",
+      "sha256": "943ab80f37cbf9d8f758b0518dd96baadadc50946cd23e4dd795aae9c2225028"
+    },
+    {
+      "path": "src/components/products/detail/ProductRelatedGuides.tsx",
+      "sha256": "bf796ad3d2f0c4945b20c12ce81993e18a9ab5ad0ff25c4c847952b661a115ca"
+    },
+    {
+      "path": "src/components/products/detail/ProductDetailTemplate.tsx",
+      "sha256": "11ac57f15f44e5ae7cfb9272bf4b8de48350928ce20481adf19d36c27efc72f2"
+    },
+    {
+      "path": "src/app/products/bearing-weld-on-hinges/product-detail.css",
+      "sha256": "779b701918bfb7637eb2e953f759c28f82121eb388cd81db6c2b0a82fed01ecd"
+    },
+    {
+      "path": "tests/resources.test.ts",
+      "sha256": "aec6a19fda694b30eb6da111e794cacf62ca3a82d3b31eeaa7a0ec621f01a0a4"
+    },
+    {
+      "path": "docs/resources-publishing-guide.md",
+      "sha256": "bd3645d81ee9ecc1e256892f7b8451b574937c68059bdd49913afe0cf971cc5d"
+    }
+  ]
+}

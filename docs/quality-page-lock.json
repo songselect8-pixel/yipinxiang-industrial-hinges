@@ -1,0 +1,97 @@
+{
+  "status": "LOCKED",
+  "approvedBy": "User approval of the Quality Control page",
+  "recordedAt": "2026-09-02T14:53:41.2806851+08:00",
+  "route": "/quality",
+  "contract": "docs/design-system.md",
+  "sourceCatalog": "铰链/Products show 2026(1).pdf",
+  "sourceCatalogSha256": "35f4881a70cf94c4a4e98e58755a668f5bcaad5b020c10140e05879813aedc33",
+  "sourcePages": [
+    3,
+    5,
+    7,
+    12,
+    16,
+    17,
+    18
+  ],
+  "viewportWidths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "qaEvidence": "output/qa/quality-page-lock/verification.json",
+  "sectionOrder": [
+    "breadcrumb-and-compact-quality-hero",
+    "quality-control-approach",
+    "dimensional-checks-against-requirements",
+    "original-technical-drawings",
+    "checks-during-production",
+    "consistency-across-production",
+    "source-bound-product-examples",
+    "custom-requirement-bridge",
+    "practical-review-points",
+    "series-specific-packaging-preparation",
+    "standard-product-and-custom-requirement-comparison",
+    "product-safe-faq",
+    "primary-dark-navy-rfq"
+  ],
+  "rules": [
+    "Do not redesign the approved Quality Control page or independently restyle its locked shared components.",
+    "Keep inspection language conservative and limited to dimensional checking, specification verification, production-stage checking, practical visual review and catalog-supported production organization.",
+    "Do not add tolerance values, inspection percentages, inspection frequencies, AQL levels, certifications, laboratory capabilities, accreditation, named test methods or test results without new verified source evidence.",
+    "Keep the single supporting inspection illustration labeled Dimensional inspection and visibly disclosed as an Illustrative scene; do not present it as company personnel, equipment, laboratory or photographic evidence.",
+    "Keep Visible Surface Condition framed only as practical visual review for requirement discussion; do not turn it into an undocumented acceptance, pass, reject or tolerance standard.",
+    "Preserve original technical drawings, symbols, dimensions, units, decimal precision and product-family associations exactly as sourced.",
+    "Keep the 20 Type and 12 / 14 / 16 Type packaging examples separate and tied to their catalog pages; do not generalize either method to every product family.",
+    "Keep company-level quality wording limited to the catalog page 18 production-stage testing-tool statement and page 3 production-organization concepts unless later verified evidence expands it.",
+    "Keep the final RFQ as a local preview until a real submission destination is separately implemented and verified."
+  ],
+  "files": [
+    {
+      "path": "src/app/quality/page.tsx",
+      "sha256": "6c768023d5539af68750bdca3b27beacaf498e4d69cc5953283bb07e606d227e"
+    },
+    {
+      "path": "src/app/quality/quality.css",
+      "sha256": "943ab80f37cbf9d8f758b0518dd96baadadc50946cd23e4dd795aae9c2225028"
+    },
+    {
+      "path": "src/components/quality/QualityPageContent.tsx",
+      "sha256": "9f65ae626a26cb1c2b8654dba2c4d9962d54e737c5920d1b3526582e5e3c0b2d"
+    },
+    {
+      "path": "src/components/quality/QualityTechnicalEvidence.tsx",
+      "sha256": "d15eedb9c8cbe6b938d6b53f9f4d32d8a41d2a3da55517f6352c9728a6e27f25"
+    },
+    {
+      "path": "src/components/quality/QualityProductExamples.tsx",
+      "sha256": "15a3612eb2b3103487bc181230970296801574b6e8143a657353fa9d281330f4"
+    },
+    {
+      "path": "src/components/quality/QualityPreparation.tsx",
+      "sha256": "04207764024d86c9fa0efa40751f53eb1e53f153db31ef7f4fbf79fdc9bffe26"
+    },
+    {
+      "path": "src/components/quality/QualityRFQSection.tsx",
+      "sha256": "5a4a5ab4b0fc5c5ea289bd7a23000fdbe0cc05ce914caec12fd5ef58cdc28cdf"
+    },
+    {
+      "path": "src/data/quality.ts",
+      "sha256": "f0354981e0627c132f38546ae5ef9c93c9e1c78c4a8a0460750c926421c70b95"
+    },
+    {
+      "path": "src/data/illustrations.ts",
+      "sha256": "ebe3eab5dff44854f55afead1139f6bf300fbad9640b7a6ab7769c9ecfd10a0a"
+    },
+    {
+      "path": "src/components/ui/SupportingVisual.tsx",
+      "sha256": "bd51e7a0e6ef81754c85b8d231e4f848deba1a9f34cd6d5f9455c49cd158913b"
+    }
+  ],
+  "resourcesLinkExtension": {
+    "implementedAt": "2026-09-02T22:53:59.6791237+08:00",
+    "compatibilityNote": "A contextual Technical Guides link was added beside the existing product-family reference without changing the approved quality hierarchy."
+  }
+}

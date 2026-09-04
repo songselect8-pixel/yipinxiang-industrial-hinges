@@ -1,0 +1,99 @@
+{
+  "status": "LOCKED",
+  "templateVersion": "1.0-locked",
+  "approvedBy": "User approval of the Bearing Type product detail page",
+  "recordedAt": "2026-09-01",
+  "batchRevalidatedAt": "2026-09-01",
+  "applicationsExtensionRevalidatedAt": "2026-09-01",
+  "customHingesExtensionRevalidatedAt": "2026-09-01",
+  "compatibilityNote": "Applications- and Custom-Hinges-specific RFQ labels are optional props; the locked product-detail defaults, field order and visual output are unchanged.",
+  "batchReview": "docs/2026-09-01-product-detail-batch-review.md",
+  "masterRoute": "/products/bearing-weld-on-hinges",
+  "contract": "docs/design-system.md",
+  "sourceManifest": "docs/research/product-family-source-manifest.json",
+  "sectionOrder": [
+    "breadcrumb",
+    "product-hero",
+    "quick-technical-summary",
+    "product-overview",
+    "available-sizes-and-weights",
+    "technical-drawing",
+    "applications",
+    "custom-requirements",
+    "manufacturing-and-quality",
+    "packaging",
+    "related-hinges",
+    "related-guides",
+    "faq",
+    "rfq"
+  ],
+  "rules": [
+    "Reuse the master template and approved visual components for every family.",
+    "Change section presence or copy only when the family source record requires it; do not create a second detail-page design.",
+    "Bind images through the locked product-family source manifest and keep page-specific flag designs separate.",
+    "Preserve dimensions, weights, symbols, decimal precision and units exactly as published.",
+    "Use only original catalog drawings; null means no drawing may be invented.",
+    "Keep manufacturing and quality compact and company-level.",
+    "Scope packaging to the named family or label any general/other-series reference explicitly.",
+    "Do not add MOQ, lead time, load capacity, material grade, certification, tolerance or finish claims without new source evidence."
+  ],
+  "baselineFiles": [
+    {
+      "path": "src/components/products/detail/ProductDetailTemplate.tsx",
+      "sha256": "11ac57f15f44e5ae7cfb9272bf4b8de48350928ce20481adf19d36c27efc72f2"
+    },
+    {
+      "path": "src/components/products/detail/ProductGallery.tsx",
+      "sha256": "e21643b329c408dbc0ae9232f0dceb195cdbd8948133aea9a07fb11019d71d0b"
+    },
+    {
+      "path": "src/components/products/detail/ImageEnlarger.tsx",
+      "sha256": "77b9fc46c2a872d478c515cec479cab95534ed550d05c23ada88e32492845c66"
+    },
+    {
+      "path": "src/app/products/bearing-weld-on-hinges/product-detail.css",
+      "sha256": "779b701918bfb7637eb2e953f759c28f82121eb388cd81db6c2b0a82fed01ecd"
+    },
+    {
+      "path": "src/components/products/TechnicalTable.tsx",
+      "sha256": "0bb7bec59411027c52a87cf5233da7e9018daf6708c225bb6ce1f64959d11b4a"
+    },
+    {
+      "path": "src/components/products/ProductCard.tsx",
+      "sha256": "43d7c32021583f383adc0bbb08a514bdff8cc2c48a32e90713fec206d1ab7b92"
+    },
+    {
+      "path": "src/components/inquiry/RFQForm.tsx",
+      "sha256": "c95621ba3425abf5b0956b4649a047ebbddfb5a1f20b2b663315e02d8da4823f"
+    },
+    {
+      "path": "src/components/sections/RFQSection.tsx",
+      "sha256": "6922eb89cf9aadc60ae570c3ff56fcf51cbde1503d36eff64b0c785754651a6e"
+    },
+    {
+      "path": "src/data/product-details.ts",
+      "sha256": "2e2da21a5802f0d303f309bcb238b862652cc083b2bfe3ed6b4d7303659db891"
+    },
+    {
+      "path": "src/data/products.ts",
+      "sha256": "c8b402749774b5de98188cfac1f128ed7431907ef1494d4f50c1747fdca9d555"
+    },
+    {
+      "path": "src/app/products/[slug]/page.tsx",
+      "sha256": "28aca3115d5faf15ead7a2139e6f8fba81101d972d4e2af9da23360c9cfb91e7"
+    },
+    {
+      "path": "src/app/products/bearing-weld-on-hinges/page.tsx",
+      "sha256": "e79839cc58b7f8da89d96609b2fa4c908c2c67f8c9b3041f9f9904471fba0023"
+    },
+    {
+      "path": "src/components/products/detail/ProductRelatedGuides.tsx",
+      "sha256": "bf796ad3d2f0c4945b20c12ce81993e18a9ab5ad0ff25c4c847952b661a115ca"
+    }
+  ],
+  "resourcesExtensionRevalidatedAt": "2026-09-02T22:53:59.6791237+08:00",
+  "resourcesExtension": {
+    "scope": "product detail related guides",
+    "compatibilityNote": "The user-authorized Resources phase adds a compact Related Guides section after Related Hinges. It reuses the locked typography, spacing and link language; all earlier product-detail sections remain unchanged."
+  }
+}

@@ -1,0 +1,59 @@
+import Image from "next/image";
+import { getPublishedResources, getResourceCategory, getResourceReadingTime, getVisibleResourceCategories } from "@/content/resources";
+import { products } from "@/data/products";
+import { Arrow } from "@/components/ui/Arrow";
+import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
+import { ResourceCard } from "./ResourceCard";
+
+const productTopics = [
+  { label: "Water-drop weld-on hinges", href: "/products?type=water-drop-shaped-weld-on-hinges", note: "Bearing, pin, gasket, grease nipple and 20 type" },
+  { label: "12 / 14 / 16 type hinges", href: "/products/12-14-16-type-weld-on-hinges", note: "Catalog models for gates, trailer doors and ramps" },
+  { label: "Weld-on hinge sizes", href: "/resources/weld-on-hinge-sizes", note: "Diameter, length, model and drawing notation" },
+  { label: "Custom hinge requirements", href: "/custom-hinges", note: "Prepare dimensions and drawings for review" },
+] as const;
+
+export function ResourcesIndexContent() {
+  const articles = getPublishedResources();
+  const featured = articles.find((article) => article.featured) ?? articles[0];
+  const latest = articles.filter((article) => article.slug !== featured?.slug);
+  const categories = getVisibleResourceCategories();
+
+  return <>
+    <section className="resources-hero" aria-labelledby="resources-title"><div className="shell">
+      <nav className="product-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">Resources</li></ol></nav>
+      <div className="resources-hero-layout"><div><Eyebrow>Technical information center</Eyebrow><h1 id="resources-title">Industrial Hinge Resources</h1><p>Technical guides, application insights and product-selection information for industrial weld-on hinge buyers.</p><div className="resources-hero-actions"><a href="#latest-resources" className="button button-primary">Explore Resources <Arrow /></a><a href="/products" className="button button-outline">View Hinge Range <Arrow /></a></div></div>
+        <nav className="resources-category-index" aria-label="Resource categories"><span className="micro-label">Browse published topics</span>{categories.map((category, index) => <a href={`#${category.id}`} key={category.id}><span>0{index + 1}</span>{category.name}<Arrow /></a>)}</nav>
+      </div>
+    </div></section>
+
+    {featured && <section className="section resource-featured" aria-labelledby="featured-resource-title"><div className="shell">
+      <SectionHeading eyebrow="Featured guide" title={<span id="featured-resource-title">A practical starting point.</span>}><a href="#selection-guides" className="text-link section-heading-link">View selection guides <Arrow /></a></SectionHeading>
+      <article className="resource-featured-card"><a href={`/resources/${featured.slug}`} className="resource-featured-image"><Image src={featured.featuredImage} alt={featured.featuredImageAlt} width={featured.featuredImageWidth} height={featured.featuredImageHeight} sizes="(max-width: 899px) 100vw, 52vw" /></a><div className="resource-featured-copy"><span className="micro-label">{getResourceCategory(featured.category)?.name}</span><h2><a href={`/resources/${featured.slug}`}>{featured.title}</a></h2><p>{featured.description}</p><div className="resource-featured-meta"><time dateTime={featured.publishedAt}>Published Sep 2, 2026</time><span>·</span><span>{getResourceReadingTime(featured)} min read</span></div><a href={`/resources/${featured.slug}`} className="button button-primary">Read Featured Guide <Arrow /></a></div></article>
+    </div></section>}
+
+    <section id="latest-resources" className="section resources-latest" aria-labelledby="latest-resources-title"><div className="shell">
+      <SectionHeading eyebrow="Published resources" title={<span id="latest-resources-title">Latest Resources</span>} description="Source-backed guidance for comparing hinge families, reading catalog data and preparing an RFQ." />
+      <div className="resource-card-grid">{latest.map((article) => <ResourceCard article={article} key={article.slug} />)}</div>
+    </div></section>
+
+    <section className="section resources-categories" aria-labelledby="resource-categories-title"><div className="shell">
+      <SectionHeading eyebrow="Topic architecture" title={<span id="resource-categories-title">Browse by Category</span>} description="Choose a published topic group. Empty future categories remain hidden until a guide is ready." />
+      <div className="resource-category-grid">{categories.map((category, index) => {
+        const categoryArticles = articles.filter((article) => article.category === category.id);
+        return <article id={category.id} key={category.id}><span className="micro-label">0{index + 1} / {categoryArticles.length} {categoryArticles.length === 1 ? "guide" : "guides"}</span><h3>{category.name}</h3><p>{category.description}</p><nav aria-label={`${category.name} articles`}>{categoryArticles.map((article) => <a href={`/resources/${article.slug}`} key={article.slug}>{article.title}<Arrow /></a>)}</nav></article>;
+      })}</div>
+    </div></section>
+
+    <section className="section resource-topics" aria-labelledby="resource-topics-title"><div className="shell resource-topics-layout">
+      <div><Eyebrow>Popular product topics</Eyebrow><h2 id="resource-topics-title">Move from research to the right catalog record.</h2><p>Use the resource guides for context, then check the relevant product page for the original images, sizes and drawings.</p><a href="/products" className="text-link">Explore all {products.length} hinge families <Arrow /></a></div>
+      <div className="resource-topic-list">{productTopics.map((topic, index) => <a href={topic.href} key={topic.label}><span>0{index + 1}</span><div><h3>{topic.label}</h3><p>{topic.note}</p></div><Arrow /></a>)}</div>
+    </div></section>
+
+    <section className="section resource-pathways" aria-labelledby="resource-pathways-title"><div className="shell">
+      <SectionHeading eyebrow="Continue your research" title={<span id="resource-pathways-title">Product and application pathways.</span>} />
+      <div className="resource-pathway-grid"><a href="/products"><span className="micro-label">Product range</span><h3>Compare Weld-On Hinge Families</h3><p>Review real product images, exact catalog entries and family-specific technical pages.</p><span className="text-link">Explore Products <Arrow /></span></a><a href="/applications"><span className="micro-label">Application context</span><h3>Explore Industrial Applications</h3><p>Start with steel doors, cabinets, gates, trailer doors or ramps supported by the catalog.</p><span className="text-link">Explore Applications <Arrow /></span></a><a href="/custom-hinges"><span className="micro-label">Requirement review</span><h3>Prepare a Custom Hinge Request</h3><p>See which families carry source-backed customization wording and what information to send.</p><span className="text-link">Custom Hinge Guides <Arrow /></span></a></div>
+    </div></section>
+
+    <section className="section rfq-section resource-rfq" aria-labelledby="resource-rfq-title"><div className="shell resource-rfq-layout"><div><Eyebrow light>Selection support</Eyebrow><h2 id="resource-rfq-title">Need help connecting a guide to your requirement?</h2><p>Send the hinge type, required dimensions, quantity and application for review.</p></div><a href="/contact#rfq" className="button button-primary">Get Selection Support <Arrow /></a></div></section>
+  </>;
+}

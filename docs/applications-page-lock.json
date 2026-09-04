@@ -1,0 +1,75 @@
+{
+  "status": "LOCKED",
+  "approvedBy": "User approval of the Applications page",
+  "recordedAt": "2026-09-01T10:20:21.155Z",
+  "route": "/applications",
+  "contract": "docs/design-system.md",
+  "sourceManifest": "docs/research/product-family-source-manifest.json",
+  "sourceCatalogSha256": "35f4881a70cf94c4a4e98e58755a668f5bcaad5b020c10140e05879813aedc33",
+  "sourcePages": [
+    4,
+    6
+  ],
+  "viewportWidths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "qaEvidence": "output/qa/applications-page/verification.json",
+  "sectionOrder": [
+    "breadcrumb-and-compact-hero",
+    "application-overview",
+    "electrical-and-control-cabinets",
+    "gates-trailer-doors-and-ramps",
+    "indoor-and-outdoor-carbon-steel-doors",
+    "rfq-preparation-guide",
+    "application-to-product-navigation",
+    "compact-selection-support-banner",
+    "primary-dark-navy-rfq"
+  ],
+  "rules": [
+    "Do not redesign the approved Applications page or its locked shared design-system components.",
+    "Keep the two approved application illustrations visibly labeled as illustrative; do not add generated application imagery to fill the page.",
+    "Keep real product photographs and the original catalog drawing as the product evidence.",
+    "Preserve the page-4 water-drop family scope and the page-6 12 / 14 / 16 Type relationship without extending either to unsupported applications.",
+    "Use neutral selection wording such as relevant hinge families, available hinge types, selection support and dimensions for review.",
+    "Do not describe a family as the best or definitive choice unless new catalog evidence explicitly establishes that relationship.",
+    "Keep the earlier selection-support banner light and compact; keep the final RFQ as the primary dark navy conversion section.",
+    "Do not add load, material, tolerance, rating, certification, MOQ, lead-time or other unsupported claims."
+  ],
+  "files": [
+    {
+      "path": "src/app/applications/page.tsx",
+      "sha256": "0d4d07e953d455aecee338c467333e38d5f5e9eb1c78c3baf038df8b54b8d2cb"
+    },
+    {
+      "path": "src/app/applications/applications.css",
+      "sha256": "714816ca3b411cc340bed01cc194c490fe4fe9892c7119123d80078528e4a375"
+    },
+    {
+      "path": "src/components/applications/ApplicationsPageContent.tsx",
+      "sha256": "23e9eded6e5e11451c880230419d0a34554ebb1206a172cbbe525f039c01615b"
+    },
+    {
+      "path": "src/components/applications/ApplicationDetailSection.tsx",
+      "sha256": "52d3c2ad1fa6054a2a3a08c12c3d1e05b34177920dae8759aff5c49cb7e8a6f1"
+    },
+    {
+      "path": "src/components/applications/ApplicationInquiryLink.tsx",
+      "sha256": "36e961b25ae0e053a49c3e5dc082e5676b326d6e5801393ec240ae6bd9d8a185"
+    },
+    {
+      "path": "src/data/applications.ts",
+      "sha256": "751b92854ac445572f9f76a1a9e58b996471da7a06f5b291e8fe8bd5a4bd95e9"
+    },
+    {
+      "path": "docs/research/product-family-source-manifest.json",
+      "sha256": "b3b5fb5f414d0553b430b0df3835b7b17888d5a3f86690eca32ece7fb47fc758"
+    }
+  ],
+  "resourcesLinkExtension": {
+    "implementedAt": "2026-09-02T22:53:59.6791237+08:00",
+    "compatibilityNote": "A single contextual Read Application Guides link was added to the existing application-to-product heading without changing page composition."
+  }
+}

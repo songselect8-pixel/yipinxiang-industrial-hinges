@@ -1,0 +1,160 @@
+{
+  "status": "LOCKED",
+  "approvedBy": "User approval of the Custom Hinges page",
+  "recordedAt": "2026-09-01T13:07:58.138Z",
+  "route": "/custom-hinges",
+  "contract": "docs/design-system.md",
+  "sourceManifest": "docs/research/product-family-source-manifest.json",
+  "sourceCatalog": "铰链/Products show 2026(1).pdf",
+  "sourceCatalogSha256": "35f4881a70cf94c4a4e98e58755a668f5bcaad5b020c10140e05879813aedc33",
+  "sourcePages": [
+    3,
+    5,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "customizationBadgeEvidence": [
+    {
+      "productId": "round",
+      "catalogFamily": "Specification-round types",
+      "sourcePages": [
+        8
+      ],
+      "catalogStatement": "Supports product customization"
+    },
+    {
+      "productId": "pin",
+      "catalogFamily": "Specification-pin types",
+      "sourcePages": [
+        9
+      ],
+      "catalogStatement": "Supports product customization"
+    },
+    {
+      "productId": "gasket",
+      "catalogFamily": "Specification-gasket types",
+      "sourcePages": [
+        10
+      ],
+      "catalogStatement": "Supports product customization"
+    },
+    {
+      "productId": "grease-nipple",
+      "catalogFamily": "Specification-grease nipple types",
+      "sourcePages": [
+        11
+      ],
+      "catalogStatement": "Supports product customization"
+    },
+    {
+      "productId": "adjustable",
+      "catalogFamily": "Specification-Adjustable types",
+      "sourcePages": [
+        12
+      ],
+      "catalogStatement": "Supports product customization"
+    },
+    {
+      "productId": "square",
+      "catalogFamily": "Specification-square types",
+      "sourcePages": [
+        13
+      ],
+      "catalogStatement": "Supports product customization"
+    },
+    {
+      "productId": "flag",
+      "catalogFamily": "Specification-flag types",
+      "sourcePages": [
+        14,
+        15
+      ],
+      "catalogStatement": "Supports product customization"
+    }
+  ],
+  "badgeExclusions": [
+    {
+      "productId": "bearing",
+      "reason": "The Bearing Type technical page does not print a product-specific customization statement."
+    },
+    {
+      "productId": "20-type",
+      "reason": "The 20 Type technical page does not print a product-specific customization statement."
+    },
+    {
+      "productId": "12-14-16-type",
+      "reason": "The 12 / 14 / 16 Type technical page does not print a product-specific customization statement."
+    }
+  ],
+  "viewportWidths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "qaEvidence": "output/qa/custom-hinges-page-lock/verification.json",
+  "sectionOrder": [
+    "breadcrumb-and-compact-hero",
+    "when-standard-sizes-are-not-enough",
+    "start-with-what-you-have",
+    "key-dimensions-to-share",
+    "from-requirement-to-production",
+    "standard-product-or-custom",
+    "product-families-with-customization-support",
+    "manufacturing-behind-the-requirement",
+    "dimensional-checks-during-production",
+    "help-us-understand-your-requirement",
+    "custom-hinge-faq",
+    "primary-dark-navy-custom-rfq"
+  ],
+  "rules": [
+    "Do not redesign the approved Custom Hinges page or independently restyle its locked shared components.",
+    "Keep Customization Supported badges limited to Round, Pin, Gasket, Grease Nipple, Adjustable, Square and Flag families, using the exact catalog page map in this lock.",
+    "Do not add a customization badge to Bearing, 20 Type or 12 / 14 / 16 Type without new explicit product-family evidence.",
+    "Preserve Requirement / Specification Confirmation in the workflow where confirmation is described.",
+    "Do not promise sample or prototype capability, sample or prototype timing, lead-time, timeline or turnaround without a new verified source.",
+    "Keep the original catalog drawing unchanged and labeled as a communication reference rather than a custom specification.",
+    "Keep the real factory exterior labeled as an actual company photo and supporting engineering, manufacturing and inspection visuals labeled as illustrative scenes.",
+    "Do not add unsupported material, finish, load, tolerance, certification, MOQ, equipment-model, capacity, fee or test claims.",
+    "Keep the final RFQ as a local preview until a real submission destination is separately implemented and verified."
+  ],
+  "files": [
+    {
+      "path": "src/app/custom-hinges/page.tsx",
+      "sha256": "f333e6f30c4d65a5bc389f349cd7ef0014b05e0d9bf476eaba187e9a5357bd32"
+    },
+    {
+      "path": "src/app/custom-hinges/custom-hinges.css",
+      "sha256": "978d2233ad13d343ca0022ed5706776f824fdf470643d4e1b68a69bcdc3d3ae6"
+    },
+    {
+      "path": "src/components/custom-hinges/CustomHingesPageContent.tsx",
+      "sha256": "009faec56cdcbcfa2f7dc7ee06f0ccf0f62bc564b4e743b55dd97e1ef839303a"
+    },
+    {
+      "path": "src/components/custom-hinges/CustomRFQSection.tsx",
+      "sha256": "c8face3df9377942ba19a8b6b2a79f0efd2a9b597d02c17e0f53f6cb0b97c07c"
+    },
+    {
+      "path": "src/data/custom-hinges.ts",
+      "sha256": "4dc264c00888620666bfb73961f30e79512d855dd94dcf1b177a32d7979f689e"
+    },
+    {
+      "path": "docs/research/product-family-source-manifest.json",
+      "sha256": "b3b5fb5f414d0553b430b0df3835b7b17888d5a3f86690eca32ece7fb47fc758"
+    }
+  ],
+  "resourcesLinkExtension": {
+    "implementedAt": "2026-09-02T22:53:59.6791237+08:00",
+    "compatibilityNote": "A contextual custom hinge guide link was added inside the existing requirement note without changing page composition or customization badges."
+  }
+}

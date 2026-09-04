@@ -1,0 +1,328 @@
+{
+  "version": 1,
+  "status": "LOCKED_SOURCE_MAP",
+  "verifiedAt": "2026-09-01",
+  "sourcePdf": {
+    "path": "铰链/Products show 2026(1).pdf",
+    "pages": 19,
+    "sha256": "35f4881a70cf94c4a4e98e58755a668f5bcaad5b020c10140e05879813aedc33"
+  },
+  "families": [
+    {
+      "id": "20-type",
+      "catalogTitle": "Specification-20types",
+      "technicalPages": [5],
+      "applicationPages": [4],
+      "productSpecificCustomizationPages": [],
+      "activeImages": [
+        {
+          "publicPath": "/images/drawing-20-type.png",
+          "publicSha256": "d96721e065a0c0f28580e20ac8525fd10ad740798a63c0a24b53be8cb5a56ae8",
+          "catalogAssociationPage": 5,
+          "originKind": "pdf-image",
+          "originLocator": "PDF page 5 / IM79.jp2",
+          "originSha256": "00e35dd85839c9ec2777b8ff6cefec7c158221228495b4cba17d33e213b38ad9",
+          "derivation": "lossless-pixel-export"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 5, "pdfImage": "IM79.jp2", "sha256": "00e35dd85839c9ec2777b8ff6cefec7c158221228495b4cba17d33e213b38ad9" }
+      ],
+      "drawing": {
+        "publicPath": "/images/drawing-20-type.png",
+        "sourcePage": 5,
+        "pdfImage": "IM79.jp2",
+        "publicSha256": "d96721e065a0c0f28580e20ac8525fd10ad740798a63c0a24b53be8cb5a56ae8",
+        "sharedCatalogImagePages": [5, 7]
+      },
+      "packaging": {
+        "publicPath": "/images/packaging-20-type.jpg",
+        "sourcePage": 16,
+        "pdfImage": "IM130.jpg",
+        "publicSha256": "8ca231699390b83ebd568c828ee6fe41af8b894b5ae371b1eff527e8f1d8b867"
+      },
+      "approvedAdditionalSourceImages": []
+    },
+    {
+      "id": "12-14-16-type",
+      "catalogTitle": "Specification-12/14/16type",
+      "technicalPages": [6],
+      "applicationPages": [6],
+      "productSpecificCustomizationPages": [],
+      "activeImages": [
+        {
+          "publicPath": "/images/drawing-12-14-16-type.png",
+          "publicSha256": "cded60f280c7f77891f4d88045881f45033ebbaec93e8ff290ea10721e4c50a5",
+          "catalogAssociationPage": 6,
+          "originKind": "pdf-image",
+          "originLocator": "PDF page 6 / IM85.jp2",
+          "originSha256": "6ae48858e642252ad6cf87e86160f64b221dfc63ad3cbfeda8bfcb81313750e6",
+          "derivation": "lossless-pixel-export"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 6, "pdfImage": "IM85.jp2", "sha256": "6ae48858e642252ad6cf87e86160f64b221dfc63ad3cbfeda8bfcb81313750e6" }
+      ],
+      "drawing": {
+        "publicPath": "/images/drawing-12-14-16-type.png",
+        "sourcePage": 6,
+        "pdfImage": "IM85.jp2",
+        "publicSha256": "cded60f280c7f77891f4d88045881f45033ebbaec93e8ff290ea10721e4c50a5",
+        "sharedCatalogImagePages": [6]
+      },
+      "packaging": {
+        "publicPath": "/images/packaging-12-14-16-type.jpg",
+        "sourcePage": 17,
+        "pdfImage": "IM133.jpg",
+        "publicSha256": "22f81d7487b3d4399857c04ca23e00887145fb058f6963d81468cf255879028c"
+      },
+      "approvedAdditionalSourceImages": []
+    },
+    {
+      "id": "bearing",
+      "catalogTitle": "Specification-bearing types",
+      "technicalPages": [7],
+      "applicationPages": [4],
+      "productSpecificCustomizationPages": [],
+      "activeImages": [
+        {
+          "publicPath": "/images/hinge-bearing.jpg",
+          "publicSha256": "f7a8c01f653dbfa965c00ba6a983bddd4e51a3c97297905d5e82dd405cf08cf2",
+          "catalogAssociationPage": 7,
+          "originKind": "project-file",
+          "originLocator": "铰链/产品图片/2轴承款水滴型铰链/01.jpg",
+          "originSha256": "f7a8c01f653dbfa965c00ba6a983bddd4e51a3c97297905d5e82dd405cf08cf2",
+          "derivation": "exact-bytes"
+        },
+        {
+          "publicPath": "/images/hinge-bearing-detail.jpg",
+          "publicSha256": "9488e5c09cc534ff6396833e694a5584b40171a14061cb4d448eeb9e82eb0347",
+          "catalogAssociationPage": 7,
+          "originKind": "project-file",
+          "originLocator": "铰链/产品图片/2轴承款水滴型铰链/02.jpg",
+          "originSha256": "9488e5c09cc534ff6396833e694a5584b40171a14061cb4d448eeb9e82eb0347",
+          "derivation": "exact-bytes"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 7, "pdfImage": "IM79.jp2", "sha256": "00e35dd85839c9ec2777b8ff6cefec7c158221228495b4cba17d33e213b38ad9" }
+      ],
+      "drawing": {
+        "publicPath": "/images/drawing-bearing-reference.png",
+        "sourcePage": 7,
+        "pdfImage": "IM79.jp2",
+        "publicSha256": "d96721e065a0c0f28580e20ac8525fd10ad740798a63c0a24b53be8cb5a56ae8",
+        "sharedCatalogImagePages": [5, 7]
+      },
+      "packaging": null,
+      "approvedAdditionalSourceImages": [
+        { "sourcePath": "铰链/产品图片/2轴承款水滴型铰链/106.jpg", "sha256": "438e6cd60cf0760c19ece40930025781e1cd3f21721a34d1b75528f8d6ad3f42" },
+        { "sourcePath": "铰链/产品图片/2轴承款水滴型铰链/20.jpg", "sha256": "41685133af27b3ad99f53a1a3b2305db59bd21e0adfc2c52cafbf49eda189009" }
+      ]
+    },
+    {
+      "id": "round",
+      "catalogTitle": "Specification-round types",
+      "technicalPages": [8],
+      "applicationPages": [],
+      "productSpecificCustomizationPages": [8],
+      "activeImages": [
+        {
+          "publicPath": "/images/hinge-round.jpg",
+          "publicSha256": "06e940c197b612e0d2525a963a02394b329dec4fc1e5147c5d552e3bb03b8e9c",
+          "catalogAssociationPage": 8,
+          "originKind": "project-file",
+          "originLocator": "铰链/产品图片/5圆形焊接铰链/圆形铰链7.jpg",
+          "originSha256": "06e940c197b612e0d2525a963a02394b329dec4fc1e5147c5d552e3bb03b8e9c",
+          "derivation": "exact-bytes"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 8, "pdfImage": "IM96.jpg", "sha256": "9e08ac2ffc239a399b1dda8c49f655c422ed65bc4bf1088f6443e6cfded45248" }
+      ],
+      "drawing": null,
+      "packaging": null,
+      "approvedAdditionalSourceImages": [
+        { "sourcePath": "铰链/产品图片/5圆形焊接铰链/圆形铰链2.jpg", "sha256": "2fb69fa23e02112333d7eed14ac060c62e4334bfef0d3ae7e5aa42a871956387" },
+        { "sourcePath": "铰链/产品图片/5圆形焊接铰链/圆形铰链5.jpg", "sha256": "7dbbce7418532d4bcbea087b2420aafc50c07ec4c12659b719bea24330ebdad6" }
+      ]
+    },
+    {
+      "id": "pin",
+      "catalogTitle": "Specification-pin types",
+      "technicalPages": [9],
+      "applicationPages": [4],
+      "productSpecificCustomizationPages": [9],
+      "activeImages": [
+        {
+          "publicPath": "/images/hinge-pin.jpg",
+          "publicSha256": "957dcf0ed82dfa823c0341b1c254036bbf7396b92e47e6ae75d4af50af70be83",
+          "catalogAssociationPage": 9,
+          "originKind": "project-file",
+          "originLocator": "铰链/产品图片/1销子款水滴型铰链/2.jpg",
+          "originSha256": "957dcf0ed82dfa823c0341b1c254036bbf7396b92e47e6ae75d4af50af70be83",
+          "derivation": "exact-bytes"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 9, "pdfImage": "IM109.jpg", "sha256": "ae273e4f99bd059a86025a24e8711f36a551fbd41d07f37f5bc2ea0c55d32af0" }
+      ],
+      "drawing": null,
+      "packaging": null,
+      "approvedAdditionalSourceImages": [
+        { "sourcePath": "铰链/产品图片/1销子款水滴型铰链/12.jpg", "publicPath": "/images/hinge-pin-hero.jpg", "sha256": "af02112b53465f9b9c34f934d1f49be58443329fe8921584a82fd4888e8ce94c" },
+        { "sourcePath": "铰链/产品图片/1销子款水滴型铰链/DSC_2005.jpg", "sha256": "fc02e7c1738c59d7f846dafb9752dbf38c9fc720045c1ffcefc845c19615ecb0" }
+      ]
+    },
+    {
+      "id": "gasket",
+      "catalogTitle": "Specification-gasket types",
+      "technicalPages": [10],
+      "applicationPages": [4],
+      "productSpecificCustomizationPages": [10],
+      "activeImages": [
+        {
+          "publicPath": "/images/hinge-gasket.jpg",
+          "publicSha256": "f655359b56a4c8cea9ea6d2aa4450e949b3519b5b0ec14b2da250b1e0522ac21",
+          "catalogAssociationPage": 10,
+          "originKind": "project-file",
+          "originLocator": "铰链/产品图片/4铜垫片水滴型焊接铰链/铜垫片.jpg",
+          "originSha256": "f655359b56a4c8cea9ea6d2aa4450e949b3519b5b0ec14b2da250b1e0522ac21",
+          "derivation": "exact-bytes"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 10, "pdfImage": "IM112.jpg", "sha256": "9967dd837468c769189fbf19ab3ff72a4d4a0990d475d173aaf8d2b2042f6fb2" }
+      ],
+      "drawing": null,
+      "packaging": null,
+      "approvedAdditionalSourceImages": [
+        { "sourcePath": "铰链/产品图片/4铜垫片水滴型焊接铰链/2023080941.jpg", "sha256": "e6f29c79c68369138368ec7099d50db80ac8ac4b965be1c9e01eefdfd60a6c54" }
+      ]
+    },
+    {
+      "id": "grease-nipple",
+      "catalogTitle": "Specification-grease nipple types",
+      "technicalPages": [11],
+      "applicationPages": [4],
+      "productSpecificCustomizationPages": [11],
+      "activeImages": [
+        {
+          "publicPath": "/images/hinge-grease-nipple.jpg",
+          "publicSha256": "5cded7657524c69f373dd46dd35bb69d618080acc0043ff8626bd388f8a9410c",
+          "catalogAssociationPage": 11,
+          "originKind": "project-file",
+          "originLocator": "铰链/产品图片/3带油嘴的水滴型焊接铰链/2023080107.jpg",
+          "originSha256": "5cded7657524c69f373dd46dd35bb69d618080acc0043ff8626bd388f8a9410c",
+          "derivation": "exact-bytes"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 11, "pdfImage": "IM115.jpg", "sha256": "3aa850a0f8349b1d4e85b5b3c83d148e361d4e1d4cecae9a7cc2a69c828de2e4" }
+      ],
+      "drawing": null,
+      "packaging": null,
+      "approvedAdditionalSourceImages": [
+        { "sourcePath": "铰链/产品图片/3带油嘴的水滴型焊接铰链/2023080116.jpg", "sha256": "6a0608b2879914ab94af7e1d737802d3f3875f0d66e1637b2cc257cf0d8e5704" },
+        { "sourcePath": "铰链/产品图片/3带油嘴的水滴型焊接铰链/油嘴1.jpg", "sha256": "7c8321f08c6e0a2137a1500f2b5b122ecea9538915b41dc42970086a3f644758" },
+        { "sourcePath": "铰链/产品图片/3带油嘴的水滴型焊接铰链/油嘴3.jpg", "sha256": "97b3d0029d03290823322d94430e0dfb36414625205175f5603c45440cf54871" }
+      ]
+    },
+    {
+      "id": "adjustable",
+      "catalogTitle": "Specification-Adjustable types",
+      "technicalPages": [12],
+      "applicationPages": [],
+      "productSpecificCustomizationPages": [12],
+      "activeImages": [
+        {
+          "publicPath": "/images/hinge-adjustable.jpg",
+          "publicSha256": "e3b9c045782bc491af3d2b06bc4c4755e0fe7dc4dde33b38a3595c4db175a637",
+          "catalogAssociationPage": 12,
+          "originKind": "pdf-image",
+          "originLocator": "PDF page 12 / IM118.jpg",
+          "originSha256": "e3b9c045782bc491af3d2b06bc4c4755e0fe7dc4dde33b38a3595c4db175a637",
+          "derivation": "exact-bytes"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 12, "pdfImage": "IM118.jpg", "sha256": "e3b9c045782bc491af3d2b06bc4c4755e0fe7dc4dde33b38a3595c4db175a637" }
+      ],
+      "drawing": null,
+      "packaging": null,
+      "approvedAdditionalSourceImages": []
+    },
+    {
+      "id": "square",
+      "catalogTitle": "Specification-square types",
+      "technicalPages": [13],
+      "applicationPages": [],
+      "productSpecificCustomizationPages": [13],
+      "activeImages": [
+        {
+          "publicPath": "/images/hinge-square.jpg",
+          "publicSha256": "c8997864c740d7d58ff51798c24c81675235affe742d231ef0e909c386023047",
+          "catalogAssociationPage": 13,
+          "originKind": "pdf-image",
+          "originLocator": "PDF page 13 / IM121.jpg",
+          "originSha256": "c8997864c740d7d58ff51798c24c81675235affe742d231ef0e909c386023047",
+          "derivation": "exact-bytes"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 13, "pdfImage": "IM121.jpg", "sha256": "c8997864c740d7d58ff51798c24c81675235affe742d231ef0e909c386023047" }
+      ],
+      "drawing": null,
+      "packaging": null,
+      "approvedAdditionalSourceImages": []
+    },
+    {
+      "id": "flag",
+      "catalogTitle": "Specification-flag types",
+      "technicalPages": [14, 15],
+      "applicationPages": [],
+      "productSpecificCustomizationPages": [14, 15],
+      "activeImages": [
+        {
+          "publicPath": "/images/hinge-flag.jpg",
+          "publicSha256": "f0839a5550bc8a753ab335031be84bad06fb5107b35f645b2e01b5a6ad318657",
+          "catalogAssociationPage": 14,
+          "originKind": "pdf-image",
+          "originLocator": "PDF page 14 / IM124.jpg",
+          "originSha256": "f0839a5550bc8a753ab335031be84bad06fb5107b35f645b2e01b5a6ad318657",
+          "derivation": "exact-bytes"
+        },
+        {
+          "publicPath": "/images/hinge-flag-leaf.jpg",
+          "publicSha256": "a098a70aac16da9fcc9dfeeb25b4e6887a6fb22889b8fab77962e20a37eda8ee",
+          "catalogAssociationPage": 15,
+          "originKind": "pdf-image",
+          "originLocator": "PDF page 15 / IM127.jpg",
+          "originSha256": "a098a70aac16da9fcc9dfeeb25b4e6887a6fb22889b8fab77962e20a37eda8ee",
+          "derivation": "exact-bytes"
+        }
+      ],
+      "catalogVisuals": [
+        { "page": 14, "pdfImage": "IM124.jpg", "sha256": "f0839a5550bc8a753ab335031be84bad06fb5107b35f645b2e01b5a6ad318657" },
+        { "page": 15, "pdfImage": "IM127.jpg", "sha256": "a098a70aac16da9fcc9dfeeb25b4e6887a6fb22889b8fab77962e20a37eda8ee" }
+      ],
+      "drawing": null,
+      "packaging": null,
+      "approvedAdditionalSourceImages": []
+    }
+  ],
+  "excludedUnmatchedAssets": [
+    {
+      "sourceFolder": "铰链/产品图片/6带油孔水滴型焊接铰链",
+      "reason": "Photo-only oil-hole construction; no matching technical specification table is established in the catalog. Do not bind it to bearing, pin, gasket or grease-nipple data."
+    },
+    {
+      "sourceFolder": "铰链/产品图片/7带油孔圆形焊接铰链",
+      "reason": "Photo-only round oil-hole construction; no matching technical specification table is established. Do not bind it to the round or grease-nipple table."
+    },
+    {
+      "sourceFolder": "铰链/产品图片/8五金配件",
+      "reason": "Machined accessories without hinge-family specification tables; excluded from the hinge product-detail source map."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+import Image from "next/image";
+import { ManufacturingCapabilities } from "./ManufacturingCapabilities";
+import { ManufacturingEvidence } from "./ManufacturingEvidence";
+import { Arrow } from "@/components/ui/Arrow";
+import { Eyebrow } from "@/components/ui/SectionHeading";
+import { site } from "@/data/site";
+
+function ManufacturingHero() {
+  return (
+    <section className="manufacturing-hero" aria-labelledby="manufacturing-page-title">
+      <div className="shell">
+        <nav className="manufacturing-breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">Manufacturing</li></ol>
+        </nav>
+        <div className="manufacturing-hero-grid">
+          <div className="manufacturing-hero-copy">
+            <Eyebrow>Industrial hinge manufacturing</Eyebrow>
+            <h1 id="manufacturing-page-title">Manufacturing Behind Every Hinge</h1>
+            <p>Machining, automatic punching, assembly, production checks and standardized packaging support industrial hinge production and confirmed custom requirements.</p>
+            <div className="manufacturing-hero-actions">
+              <a href="#capabilities" className="button button-primary">Explore Our Process <Arrow /></a>
+              <a href="#rfq" className="button button-outline">Discuss Your Requirement <Arrow /></a>
+            </div>
+            <div className="manufacturing-hero-tags" aria-label="Catalog-listed capability areas">
+              <span>Machining</span><span>Punching</span><span>Assembly</span><span>Inspection</span><span>Packaging</span>
+            </div>
+          </div>
+          <figure className="manufacturing-hero-figure" data-asset-kind="company-photo">
+            <Image src="/images/factory-exterior.jpg" alt={`Actual exterior of the ${site.brand} factory shown in the 2026 company catalog`} width={2591} height={1943} quality={85} preload sizes="(max-width: 768px) calc(100vw - 40px), 52vw" />
+            <figcaption><span>{site.brand} factory</span><span>Actual company photo · catalog p3</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function ManufacturingPageContent() {
+  return (
+    <>
+      <ManufacturingHero />
+      <ManufacturingCapabilities />
+      <ManufacturingEvidence />
+    </>
+  );
+}

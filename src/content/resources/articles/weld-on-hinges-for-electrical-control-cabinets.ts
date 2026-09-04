@@ -1,0 +1,75 @@
+import { resourcePublisher } from "../publishing.ts";
+import { resourceLink, type ResourceArticle } from "../types.ts";
+
+export const cabinetHinges = {
+  slug: "weld-on-hinges-for-electrical-control-cabinets",
+  order: 4,
+  title: "Weld-On Hinges for Electrical and Control Cabinets",
+  description: "Explore catalog-supported water-drop hinge families for switch, control, network and industrial cabinets, with a practical specification checklist.",
+  category: "application-guides",
+  publishedAt: "2026-09-02",
+  updatedAt: null,
+  author: resourcePublisher.name,
+  featuredImage: "/images/illustrations/application-control-cabinet.png",
+  featuredImageAlt: "Industrial application illustration focused on a weld-on hinge connection at a steel control cabinet door",
+  featuredImageWidth: 1448,
+  featuredImageHeight: 1086,
+  keywords: ["control cabinet weld-on hinges", "electrical cabinet hinges", "switch cabinet hinges", "industrial enclosure hinge selection"],
+  relatedProducts: ["bearing", "pin", "gasket", "grease-nipple", "20-type"],
+  relatedApplications: ["switch-cabinets", "control-cabinets", "network-cabinets", "industrial-cabinets"],
+  relatedArticles: ["how-to-choose-weld-on-hinges", "weld-on-hinge-sizes", "standard-vs-custom-weld-on-hinges"],
+  draft: false,
+  noindex: false,
+  featured: false,
+  introduction: "The catalog connects the water-drop shaped weld-on hinge range with switch cabinets, control cabinets, network cabinets and other industrial cabinets. Buyers can use that relationship to identify relevant families, then confirm the structure and dimensions required by the enclosure design.",
+  content: [
+    { type: "heading", level: 2, id: "cabinet-application-scope", title: "Use the catalog’s cabinet application scope" },
+    { type: "paragraph", content: ["The company profile page presents water-drop shaped weld-on hinges for indoor and outdoor carbon steel doors and for several cabinet types. The named cabinet applications are switch cabinets, control cabinets, network cabinets and other industrial cabinets. This is family-level application context rather than a statement that every listed variant fits every enclosure."] },
+    { type: "paragraph", content: ["Start by describing the cabinet or enclosure and the door-edge arrangement. Show how the hinge will connect the door to the body, where the weld areas are located and which side of the structure is visible. If the door and body use formed edges, a section view helps explain the geometry more clearly than a front photograph alone."] },
+    { type: "image", src: "/images/illustrations/application-control-cabinet.png", alt: "Supporting industrial scene illustrating a weld-on hinge at a control cabinet door edge", width: 1448, height: 1086, caption: "Industrial application illustration. Product photographs and catalog dimensions remain the technical reference.", evidence: "supporting-illustration" },
+
+    { type: "heading", level: 2, id: "relevant-families", title: "Review the relevant water-drop hinge families" },
+    { type: "paragraph", content: ["The source-backed water-drop group contains bearing, pin, gasket and grease-nipple constructions and the 20 type series. These are separate families with separate photographs and technical records. A buyer should compare them by catalog name and structure, not group their dimensions under a generic water-drop label."] },
+    { type: "list", items: [
+      ["Bearing type: a water-drop profile shown with a bearing assembly."],
+      ["Pin type: a water-drop profile with a separable pin construction."],
+      ["Gasket type: a water-drop profile with a visible gasket or washer between the bodies."],
+      ["Grease nipple type: a weld-on hinge construction shown with an integrated grease fitting."],
+      ["20 type: 20-A with chamfered ends and 20-B with right-angle ends."],
+    ] },
+    { type: "paragraph", content: ["These descriptions identify visible catalog structures only. They do not add unpublished performance, material or test claims. Where two products appear similar, confirm the family using the source page, image and technical table together."] },
+    { type: "product-table", productIds: ["bearing", "pin", "gasket", "grease-nipple", "20-type"], title: "Water-drop families for cabinet review", description: "Compare each relevant family with exact catalog size examples and its detail page. Examples are not a continuous size range.", display: "catalog-examples" },
+
+    { type: "heading", level: 2, id: "cabinet-dimensions", title: "Prepare cabinet and hinge dimensions together" },
+    { type: "paragraph", content: ["A hinge request is easier to review when the cabinet section and hinge dimensions appear on the same drawing set. Show the door thickness or formed edge only when it is part of the buyer’s confirmed design. Mark the hinge axis location, available welding surface and surrounding clearance. Then list the intended catalog family and its exact published size or drawing parameters."] },
+    { type: "paragraph", content: ["For a replacement request, measure the existing part at clearly marked positions and note that the values come from a physical sample. For a new design, identify values from the engineering drawing. Do not blend measured values and catalog values into one unlabeled row. The ", resourceLink("guide to diameter and length notation", "/resources/weld-on-hinge-sizes"), " explains the formats used across the catalog."] },
+    { type: "comparison-table", caption: "Cabinet hinge inquiry information", columns: ["Area", "Useful input", "Purpose"], rows: [
+      ["Cabinet type", "Switch, control, network or other industrial cabinet", "Connect the inquiry to the catalog application scope"],
+      ["Door and body", "Section views and hinge location", "Explain the weld-on arrangement"],
+      ["Hinge family", "Bearing, pin, gasket, grease nipple or 20 type", "Identify the relevant source record"],
+      ["Dimensions", "Exact catalog entry or labeled buyer values", "Support specification comparison"],
+      ["Inquiry context", "Estimated quantity and drawing reference", "Complete the RFQ information"],
+    ] },
+
+    { type: "heading", level: 2, id: "standard-or-custom", title: "Separate standard selection from custom review" },
+    { type: "paragraph", content: ["If a published catalog entry matches the required family and dimensions, reference that entry directly. If the cabinet design needs a different dimension or structure, do not edit the source table to make it appear standard. Instead, submit the required drawing as a separate request. This keeps the published product record intact."] },
+    { type: "paragraph", content: ["The catalog explicitly states customization support for the pin, gasket and grease-nipple families among the cabinet-related group. It does not provide the same explicit family statement for bearing or 20 type on their source pages. Therefore, custom badges and wording must follow those family boundaries. Any requirement can still be sent for review without promising that a specific change is available."] },
+    { type: "paragraph", content: ["Read ", resourceLink("standard versus custom weld-on hinges", "/resources/standard-vs-custom-weld-on-hinges"), " for the information to prepare before that discussion. Use requirement and specification confirmation language until the requested geometry has been reviewed."] },
+
+    { type: "heading", level: 2, id: "cabinet-rfq-checklist", title: "Use a concise cabinet RFQ checklist" },
+    { type: "list", ordered: true, items: [
+      ["Name the cabinet or enclosure application."],
+      ["Attach a door-and-body section or a clearly labeled sketch."],
+      ["Identify the relevant hinge family and exact catalog entry, if known."],
+      ["Show every buyer-required dimension at its measurement position."],
+      ["State the estimated quantity and add any installation questions."],
+    ] },
+    { type: "paragraph", content: ["This information allows the inquiry to move from a broad cabinet application to a defined hinge record. Unknown facts should remain open for confirmation. A catalog-based selection process uses the documented application relationship, the correct family image, the family’s own technical data and the buyer’s application drawing."] },
+  ],
+  keyTakeaways: [
+    "The catalog links water-drop shaped hinges with switch, control, network and other industrial cabinets.",
+    "Bearing, pin, gasket, grease-nipple and 20 type hinges remain distinct technical families.",
+    "Show the cabinet door edge, body section, hinge axis and measurement positions in the request.",
+    "Keep standard catalog records separate from buyer-supplied custom dimensions.",
+  ],
+} satisfies ResourceArticle;

@@ -1,0 +1,48 @@
+{
+  "status": "LOCKED",
+  "approvedBy": "User approval of the Contact / RFQ page",
+  "recordedAt": "2026-09-02T21:20:55.8263115+08:00",
+  "route": "/contact",
+  "contract": "docs/design-system.md",
+  "sourceCatalog": "铰链/Products show 2026(1).pdf",
+  "sourceCatalogSha256": "35f4881a70cf94c4a4e98e58755a668f5bcaad5b020c10140e05879813aedc33",
+  "sourcePages": [19],
+  "viewportWidths": [1440, 1024, 768, 390],
+  "qaEvidence": "output/qa/contact/verification.json",
+  "preLaunchChecklist": "docs/pre-launch-checklist.md",
+  "sectionOrder": [
+    "breadcrumb-and-compact-technical-inquiry-hero",
+    "catalog-confirmed-contact-options",
+    "grouped-main-rfq-form",
+    "compact-selection-support",
+    "buyer-information-checklist",
+    "standard-product-and-custom-requirement-paths",
+    "application-entry-points",
+    "conservative-response-expectation",
+    "product-safe-inquiry-faq",
+    "compact-dark-navy-final-cta"
+  ],
+  "rules": [
+    "Do not redesign the approved Contact / RFQ page or independently restyle its locked shared components.",
+    "Preserve the current RFQ form, validation, file-upload interface, responsive layout, product selector, contact information and configuration architecture.",
+    "Keep the honest unconfigured behavior and exact visible status: Request checked, not sent.",
+    "Do not simulate a successful submission, silently discard an RFQ or clear buyer input after validation or delivery failure.",
+    "Do not implement SMTP, email APIs, Resend, SendGrid or another external email service at this stage.",
+    "Before production, connect the RFQ form to a real server-side delivery system and perform a real submission test to the configured inquiry recipient.",
+    "Keep product options derived from the existing catalog family data rather than maintaining a second product taxonomy.",
+    "Keep the catalog-confirmed company, Eric Huang, email and phone values configurable through the recorded environment variables.",
+    "Do not add an unverified address, map, contact channel, office, branch, business hour or response-time promise.",
+    "Do not add MOQ, lead-time, sample-time, load, tolerance, certification, payment, shipping-time or other unsupported technical or commercial claims.",
+    "Keep the current accepted file formats and 10 MB client limit aligned with the future receiving endpoint; narrow both together if production support differs.",
+    "A future server-side delivery connection may replace only the configured delivery boundary and must preserve this locked page composition and failure honesty."
+  ],
+  "files": [
+    { "path": "src/app/contact/page.tsx", "sha256": "677f1b3ebc26fb97b99fdbe579afc94d0bedbd27aaaf7aa551200c7066cf80c9" },
+    { "path": "src/app/contact/contact.css", "sha256": "2f85385859991205439261cc6fbfb020e27456146e29fba28a5376431485d27f" },
+    { "path": "src/components/contact/ContactPageContent.tsx", "sha256": "f0b1b78c3747476ad001f11eb84cc08188148550f92861b0387ea267781c9eab" },
+    { "path": "src/components/contact/ContactRFQForm.tsx", "sha256": "9b7095c0d8d7551fb5883bc64f8deba2d127a8e6bad25e4a4b288b86d1e35578" },
+    { "path": "src/data/contact.ts", "sha256": "277cb64647ab30f32d585f6563b3673f2e48759b825e1cf6d31ef7e89bf13080" },
+    { "path": "src/data/contact-rfq.ts", "sha256": "ab3e6de2bd73a57c6565016673db0882a60ddd9e9592ea2c916a26c03eaccea5" },
+    { "path": "docs/contact-rfq-configuration.md", "sha256": "ee4432027ee39998883e247b1863840d0cdefabefea485661d2ae8a2f41b1183" }
+  ]
+}

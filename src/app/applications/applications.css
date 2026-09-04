@@ -1,0 +1,219 @@
+.applications-page { overflow-x: clip; }
+.applications-page [id="application-overview"],
+.applications-page [id="electrical-control-cabinets"],
+.applications-page [id="gates-trailers-ramps"],
+.applications-page [id="industrial-steel-doors"],
+.applications-page [id="selection-guide"],
+.applications-page [id="rfq"] { scroll-margin-top: 108px; }
+
+/* Compact inner-page hero: product-led, with the approved industrial hierarchy. */
+.application-page-hero { padding-block: 27px 61px; background: var(--paper); border-bottom: 1px solid var(--line); }
+.application-breadcrumb { margin-bottom: 32px; color: var(--steel); font-size: 11px; }
+.application-breadcrumb ol { display: flex; flex-wrap: wrap; gap: 9px; }
+.application-breadcrumb a:hover { color: var(--navy); text-decoration: underline; text-underline-offset: 4px; }
+.application-hero-layout { display: grid; grid-template-columns: .92fr 1.08fr; gap: 78px; align-items: center; }
+.application-hero-copy { min-width: 0; }
+.application-hero-copy h1 { max-width: 660px; font-size: 58px; line-height: 1.07; letter-spacing: -2.15px; }
+.application-hero-copy > p:not(.eyebrow) { max-width: 570px; margin-top: 25px; color: var(--steel); font-size: 16px; line-height: 1.85; }
+.application-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.application-hero-actions .button { font-size: 12px; }
+.application-hero-visual { min-width: 0; margin: 0; }
+.application-hero-visual > div { aspect-ratio: 1.48 / 1; background: #e7ebed; overflow: hidden; }
+.application-hero-visual img { width: 100%; height: 100%; object-fit: contain; padding: 32px; mix-blend-mode: multiply; }
+.application-hero-visual figcaption,
+.application-overview-media figcaption,
+.application-detail-media figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 18px; padding-block: 12px; border-bottom: 1px solid var(--line); color: var(--steel); font-size: 10px; line-height: 1.6; }
+.application-hero-visual figcaption span:first-child,
+.application-overview-media figcaption span:first-child,
+.application-detail-media figcaption span:first-child { color: var(--navy); font-weight: 500; }
+
+/* Visual overview: two primary application scenes and a restrained product-led row. */
+.application-overview { background: #fff; }
+.application-overview-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px 32px; }
+.application-overview-card { display: flex; flex-direction: column; min-width: 0; }
+.application-overview-media { min-width: 0; margin: 0; }
+.application-overview-image-frame { aspect-ratio: 4 / 3; overflow: hidden; background: #e8ecef; }
+.application-overview-image-frame img { width: 100%; height: 100%; object-fit: contain; transition: transform 220ms ease; }
+.application-overview-media-product-reference .application-overview-image-frame { background: var(--paper); }
+.application-overview-media-product-reference img { padding: 24px; mix-blend-mode: multiply; }
+.application-overview-copy { display: grid; grid-template-columns: 34px 1fr; column-gap: 15px; padding-top: 21px; }
+.application-card-number { grid-row: 1 / span 4; padding-top: 5px; color: var(--steel); font-size: 10px; font-variant-numeric: tabular-nums; }
+.application-overview-copy h3 { font-size: 27px; line-height: 1.25; letter-spacing: -.6px; }
+.application-overview-copy > p { max-width: 530px; margin-top: 12px; color: var(--steel); font-size: 13px; line-height: 1.8; }
+.application-overview-copy .text-link { justify-self: start; margin-top: 12px; font-size: 12px; }
+.application-overview-card:hover .application-overview-image-frame img { transform: scale(1.018); }
+.application-overview-card:hover .text-link { text-decoration: underline; text-underline-offset: 4px; }
+.application-overview-card-secondary { display: grid; grid-template-columns: .92fr 1.08fr; gap: 27px; padding-top: 30px; border-top: 1px solid var(--line); }
+.application-overview-card-secondary .application-overview-copy { align-content: center; padding-top: 0; }
+.application-overview-card-secondary .application-overview-copy h3 { font-size: 24px; }
+.application-visual-note { margin-top: 31px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--steel); font-size: 11px; line-height: 1.8; }
+
+/* Application guides preserve each catalog relationship and keep selection practical. */
+.application-detail { background: #fff; }
+.application-detail-reversed { background: var(--paper); }
+.application-detail-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: 82px; align-items: center; }
+.application-detail-reversed .application-detail-media { order: 2; }
+.application-detail-reversed .application-detail-copy { order: 1; }
+.application-detail-media { min-width: 0; margin: 0; }
+.application-detail-image-frame { aspect-ratio: 1.08 / 1; display: grid; place-items: center; overflow: hidden; background: var(--paper); }
+.application-detail-reversed .application-detail-image-frame { background: #fff; }
+.application-detail-image-frame img { width: 100%; height: 100%; object-fit: contain; padding: 34px; mix-blend-mode: multiply; }
+.application-detail-media-catalog-composite .application-detail-image-frame img { padding: 18px; }
+.application-detail-copy { min-width: 0; }
+.application-detail-kicker { display: flex; align-items: center; gap: 13px; margin-bottom: 18px; }
+.application-detail-kicker > span { color: var(--orange); font-size: 11px; font-variant-numeric: tabular-nums; }
+.application-detail-kicker .micro-label { color: var(--steel); }
+.application-detail-copy h2 { max-width: 680px; font-size: 42px; line-height: 1.14; letter-spacing: -1.2px; }
+.application-environment { max-width: 700px; margin-top: 20px; color: var(--steel); font-size: 14px; line-height: 1.85; }
+.application-detail-columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 35px; margin-top: 29px; }
+.application-detail-columns h3 { font-size: 13px; line-height: 1.5; }
+.application-detail-columns ul { margin-top: 14px; }
+.application-detail-columns li { position: relative; padding: 10px 0 10px 18px; border-top: 1px solid var(--line); color: var(--steel); font-size: 12px; line-height: 1.6; }
+.application-detail-columns li::before { content: ""; position: absolute; left: 1px; top: 18px; width: 7px; height: 1px; background: var(--orange); }
+.application-terms { margin-top: 22px; padding: 14px 16px; background: color-mix(in srgb, var(--paper) 82%, transparent); border-left: 2px solid var(--orange); }
+.application-detail-reversed .application-terms { background: #fff; }
+.application-terms .micro-label { color: var(--steel); font-size: 8px; }
+.application-terms p { margin-top: 5px; font-size: 12px; line-height: 1.7; }
+.application-product-paths { margin-top: 23px; padding-top: 17px; border-top: 1px solid var(--line); }
+.application-product-paths > .micro-label { color: var(--steel); font-size: 8px; }
+.application-product-paths nav { display: flex; flex-wrap: wrap; gap: 4px 22px; margin-top: 8px; }
+.application-product-paths nav a { display: inline-flex; align-items: center; gap: 8px; min-height: 29px; font-size: 11px; font-weight: 500; }
+.application-product-paths nav svg { width: 14px; height: 14px; }
+.application-product-paths nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.application-detail-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 25px; margin-top: 24px; }
+.application-detail-actions .button { min-height: 46px; padding-block: 11px; font-size: 11px; gap: 18px; }
+.application-detail-actions .text-link { font-size: 11px; }
+
+/* RFQ preparation makes the page useful even before a product family is chosen. */
+.application-selection-guide { background: var(--paper); border-block: 1px solid var(--line); }
+.selection-guide-layout { display: grid; grid-template-columns: .72fr 1.28fr; gap: 90px; align-items: start; }
+.selection-guide-heading h2 { max-width: 460px; font-size: 44px; line-height: 1.15; letter-spacing: -1.25px; }
+.selection-guide-heading > p:not(.eyebrow) { max-width: 470px; margin-top: 20px; color: var(--steel); font-size: 14px; line-height: 1.85; }
+.selection-input-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 27px 25px; counter-reset: application-input; }
+.selection-input-grid li { min-height: 126px; padding-top: 17px; border-top: 1px solid #bfc9d0; }
+.selection-input-grid span { color: var(--orange); font-size: 10px; font-variant-numeric: tabular-nums; }
+.selection-input-grid p { max-width: 180px; margin-top: 23px; font-size: 15px; line-height: 1.5; }
+
+.application-product-navigation { background: #fff; }
+.application-navigation-list { border-bottom: 1px solid var(--line); }
+.application-navigation-list article { display: grid; grid-template-columns: .75fr 1.35fr .6fr; gap: 42px; align-items: center; padding-block: 24px; border-top: 1px solid var(--line); }
+.application-navigation-list article > div .micro-label { color: var(--steel); font-size: 8px; }
+.application-navigation-list h3 { margin-top: 8px; font-size: 20px; line-height: 1.35; }
+.application-navigation-list nav { display: flex; flex-wrap: wrap; gap: 4px 20px; }
+.application-navigation-list nav a { display: inline-flex; align-items: center; gap: 8px; min-height: 31px; color: var(--steel); font-size: 11px; }
+.application-navigation-list nav a:hover { color: var(--navy); text-decoration: underline; text-underline-offset: 4px; }
+.application-navigation-list nav svg { width: 14px; height: 14px; }
+.application-navigation-list article > .text-link { justify-self: end; font-size: 11px; text-align: right; }
+.application-navigation-note { display: flex; justify-content: flex-end; align-items: center; gap: 31px; margin-top: 29px; }
+.application-navigation-note p { color: var(--steel); font-size: 12px; }
+.application-navigation-note .button { min-height: 46px; padding-block: 11px; font-size: 11px; }
+
+.application-help-cta { background: var(--paper); color: var(--navy); padding-block: 48px; border-block: 1px solid var(--line); }
+.application-help-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: center; }
+.application-help-layout h2 { max-width: 620px; font-size: 34px; line-height: 1.18; letter-spacing: -.9px; }
+.application-help-layout > div:last-child { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 26px; align-items: center; }
+.application-help-layout > div:last-child > p { max-width: 440px; color: var(--steel); font-size: 13px; line-height: 1.75; }
+.application-help-layout .button { margin-top: 0; min-height: 47px; font-size: 11px; white-space: nowrap; }
+
+.applications-page .rfq-section { border-top: 1px solid #405467; }
+
+@media (max-width: 1199px) {
+  .application-hero-layout { gap: 48px; }
+  .application-hero-copy h1 { font-size: 50px; letter-spacing: -1.8px; }
+  .application-detail-layout { gap: 48px; }
+  .application-detail-copy h2 { font-size: 38px; }
+  .application-detail-columns { gap: 24px; }
+  .selection-guide-layout { gap: 52px; }
+  .application-navigation-list article { grid-template-columns: .7fr 1.25fr .65fr; gap: 26px; }
+  .application-help-layout { gap: 42px; }
+}
+
+@media (max-width: 899px) {
+  .application-page-hero { padding-bottom: 50px; }
+  .application-hero-layout { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .application-hero-copy h1 { font-size: 43px; letter-spacing: -1.45px; }
+  .application-hero-copy > p:not(.eyebrow) { font-size: 13px; }
+  .application-hero-actions .button { flex: 1 1 190px; padding-inline: 15px; gap: 14px; }
+  .application-hero-visual img { padding: 22px; }
+  .application-overview-grid { gap: 40px 24px; }
+  .application-overview-copy { grid-template-columns: 27px 1fr; gap: 11px; }
+  .application-overview-copy h3 { font-size: 23px; }
+  .application-overview-copy > p { font-size: 12px; }
+  .application-overview-card-secondary { grid-template-columns: 1fr; gap: 18px; }
+  .application-detail-layout { grid-template-columns: 1fr; gap: 33px; }
+  .application-detail-reversed .application-detail-media,
+  .application-detail-reversed .application-detail-copy { order: initial; }
+  .application-detail-media { width: min(600px, 100%); }
+  .application-detail-image-frame { aspect-ratio: 1.35 / 1; }
+  .application-detail-copy h2 { font-size: 37px; }
+  .selection-guide-layout { grid-template-columns: 1fr; gap: 39px; }
+  .selection-guide-heading h2 { font-size: 39px; }
+  .selection-input-grid { gap: 25px 22px; }
+  .application-navigation-list article { grid-template-columns: 1fr; gap: 13px; }
+  .application-navigation-list article > .text-link { justify-self: start; text-align: left; }
+  .application-help-layout { grid-template-columns: 1fr; gap: 20px; }
+  .application-help-layout h2 { font-size: 32px; }
+}
+
+@media (max-width: 599px) {
+  .applications-page [id] { scroll-margin-top: 96px; }
+  .application-page-hero { padding-block: 20px 42px; }
+  .application-breadcrumb { margin-bottom: 25px; font-size: 10px; }
+  .application-hero-layout { grid-template-columns: 1fr; gap: 31px; }
+  .application-hero-copy h1 { font-size: 41px; line-height: 1.09; letter-spacing: -1.35px; }
+  .application-hero-copy > p:not(.eyebrow) { margin-top: 19px; font-size: 13px; line-height: 1.8; }
+  .application-hero-actions { gap: 9px; margin-top: 24px; }
+  .application-hero-actions .button { flex: 1 1 100%; justify-content: space-between; min-height: 47px; font-size: 11px; }
+  .application-hero-visual > div { aspect-ratio: 4 / 3; }
+  .application-hero-visual img { padding: 17px; }
+  .application-hero-visual figcaption,
+  .application-overview-media figcaption,
+  .application-detail-media figcaption { font-size: 9px; }
+
+  .application-overview-grid { grid-template-columns: 1fr; gap: 39px; }
+  .application-overview-card-secondary { display: flex; padding-top: 0; border-top: 0; }
+  .application-overview-media-product-reference img { padding: 19px; }
+  .application-overview-copy { grid-template-columns: 27px 1fr; padding-top: 18px; }
+  .application-overview-copy h3,
+  .application-overview-card-secondary .application-overview-copy h3 { font-size: 24px; }
+  .application-overview-copy > p { font-size: 13px; }
+  .application-overview-copy .text-link { font-size: 11px; }
+  .application-visual-note { margin-top: 25px; font-size: 10px; }
+
+  .application-detail-layout { gap: 27px; }
+  .application-detail-image-frame { aspect-ratio: 4 / 3; }
+  .application-detail-image-frame img { padding: 20px; }
+  .application-detail-media-catalog-composite .application-detail-image-frame img { padding: 10px; }
+  .application-detail-kicker { margin-bottom: 14px; }
+  .application-detail-copy h2 { font-size: 34px; letter-spacing: -.9px; }
+  .application-environment { margin-top: 16px; font-size: 13px; }
+  .application-detail-columns { grid-template-columns: 1fr; gap: 22px; margin-top: 25px; }
+  .application-detail-columns h3 { font-size: 14px; }
+  .application-detail-columns li { font-size: 13px; }
+  .application-terms p { font-size: 11px; }
+  .application-product-paths nav { flex-direction: column; gap: 1px; }
+  .application-product-paths nav a { justify-content: space-between; min-height: 37px; border-bottom: 1px solid var(--line); font-size: 11px; }
+  .application-detail-actions { align-items: stretch; flex-direction: column; gap: 6px; }
+  .application-detail-actions .button { justify-content: space-between; width: 100%; }
+  .application-detail-actions .text-link { justify-content: space-between; width: 100%; }
+
+  .selection-guide-heading h2 { font-size: 35px; }
+  .selection-guide-heading > p:not(.eyebrow) { font-size: 13px; }
+  .selection-input-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 18px; }
+  .selection-input-grid li { min-height: 115px; }
+  .selection-input-grid p { margin-top: 17px; font-size: 14px; }
+
+  .application-navigation-list article { padding-block: 22px; }
+  .application-navigation-list h3 { font-size: 19px; }
+  .application-navigation-list nav { flex-direction: column; gap: 0; }
+  .application-navigation-list nav a { justify-content: space-between; min-height: 38px; border-bottom: 1px solid var(--line); font-size: 11px; }
+  .application-navigation-note { align-items: stretch; flex-direction: column; gap: 13px; }
+  .application-navigation-note .button { justify-content: space-between; width: 100%; }
+
+  .application-help-cta { padding-block: 38px; }
+  .application-help-layout { gap: 18px; }
+  .application-help-layout h2 { font-size: 30px; letter-spacing: -.7px; }
+  .application-help-layout > div:last-child { grid-template-columns: 1fr; gap: 17px; }
+  .application-help-layout > div:last-child > p { font-size: 13px; }
+  .application-help-layout .button { justify-content: space-between; width: 100%; }
+}

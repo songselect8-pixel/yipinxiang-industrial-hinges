@@ -1,0 +1,104 @@
+{
+  "status": "LOCKED",
+  "approvedBy": "User approval of the About Us page",
+  "recordedAt": "2026-09-02T10:50:57.6181582Z",
+  "route": "/about-us",
+  "contract": "docs/design-system.md",
+  "sourceCatalog": "铰链/Products show 2026(1).pdf",
+  "sourceCatalogSha256": "35f4881a70cf94c4a4e98e58755a668f5bcaad5b020c10140e05879813aedc33",
+  "sourcePages": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "viewportWidths": [
+    1440,
+    1024,
+    768,
+    390
+  ],
+  "qaEvidence": "output/playwright/about-us/verification.json",
+  "sectionOrder": [
+    "breadcrumb-and-actual-factory-hero",
+    "company-profile",
+    "focused-industrial-hinge-range",
+    "manufacturing-capability-and-company-evidence",
+    "standard-products-and-custom-requirements",
+    "supported-industrial-applications",
+    "conservative-quality-control-summary",
+    "practical-b2b-buyer-reasons",
+    "catalog-supported-port-and-highway-access",
+    "requirement-led-working-approach",
+    "compact-internal-navigation",
+    "primary-dark-navy-rfq-cta"
+  ],
+  "rules": [
+    "Do not redesign the approved About Us page or independently restyle its locked shared components.",
+    "Preserve the current desktop and mobile composition, section order, typography, spacing, image crops, cards, navigation hierarchy and dark navy RFQ treatment.",
+    "Keep the real catalog factory exterior as the primary company evidence and keep actual product photography tied to the audited product-family data.",
+    "Keep the manufacturing and application supporting visuals visibly disclosed as Illustrative scene and described with neutral labels such as Manufacturing process, Cabinet application and Trailer & gate application.",
+    "Do not label generated imagery as Our Workshop, Our Production Line, Our Equipment, company staff, a customer installation or other company photographic evidence.",
+    "Keep company-specific manufacturing and quality statements limited to their recorded catalog pages unless later verified source evidence expands them.",
+    "Keep logistics claims limited to catalog-supported proximity to Shanghai Port and Ningbo Port, convenient highway transportation and personnel responsible for shipment handling.",
+    "Do not add shipping-time, delivery-speed, export-volume, destination-country, freight-price, transit-time or annual-export claims.",
+    "Do not add founding year, employee count, factory area, revenue, customer count, capacity, patents, certifications, awards, load ratings, tolerances, inspection percentages, MOQ or lead-time claims without new verified evidence.",
+    "Preserve the neutral application-selection wording and do not present a hinge family as a definitive best fit without catalog support.",
+    "Keep the final RFQ as a local preview until a real submission destination is separately implemented and verified. A future Contact page must not change this locked About Us composition."
+  ],
+  "files": [
+    {
+      "path": "src/app/about-us/page.tsx",
+      "sha256": "9e9a8ebcb95b49801fcea093ff29acf93638a3b86aa6db39ceaaa67e8e2caef9"
+    },
+    {
+      "path": "src/app/about-us/about-us.css",
+      "sha256": "52ae0b8db488d549d6246acf2c9529ebe6ac8918cdff52dcb83b3b65ec40bd15"
+    },
+    {
+      "path": "src/components/about/AboutPageContent.tsx",
+      "sha256": "d9ab719ad60d069d8daf68f7245678d64a9aa1689a1d0e2e9411ce2b52e35f56"
+    },
+    {
+      "path": "src/components/about/AboutCapabilities.tsx",
+      "sha256": "bb4d000f01be8acddb4fd8fbec4889c3603b2d78b39cd3727a29945e9ee17a03"
+    },
+    {
+      "path": "src/components/about/AboutCompanyEvidence.tsx",
+      "sha256": "aadeb869a47b74d0154bb413f291967fc9fb34b264193120e7ebc5b89b7a5a95"
+    },
+    {
+      "path": "src/components/about/AboutCTASection.tsx",
+      "sha256": "db88e7e4e86787bd6fab92dde48db415f8254defe66230d053e192d955726bd8"
+    },
+    {
+      "path": "src/data/about.ts",
+      "sha256": "d4d7052f055a4740f854428f7fb61893e794ce4ef64a6317d7e86d3e36b235fe"
+    },
+    {
+      "path": "src/data/illustrations.ts",
+      "sha256": "ebe3eab5dff44854f55afead1139f6bf300fbad9640b7a6ab7769c9ecfd10a0a"
+    },
+    {
+      "path": "src/components/ui/SupportingVisual.tsx",
+      "sha256": "bd51e7a0e6ef81754c85b8d231e4f848deba1a9f34cd6d5f9455c49cd158913b"
+    },
+    {
+      "path": "src/components/products/ProductCard.tsx",
+      "sha256": "43d7c32021583f383adc0bbb08a514bdff8cc2c48a32e90713fec206d1ab7b92"
+    }
+  ]
+}
