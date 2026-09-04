@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "next dev --hostname 127.0.0.1",
+    "prepare:images": "node scripts/prepare-responsive-images.mjs",
+    "prebuild": "npm run prepare:images",
     "build": "next build",
     "start": "next start --hostname 127.0.0.1",
     "typecheck": "tsc --noEmit",
+    "pretest": "npm run prepare:images",
     "test": "node --experimental-strip-types --test tests/*.test.ts",
     "verify:static": "node scripts/verify-static-export.mjs"
   },
@@ -21,6 +24,7 @@
     "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "sharp": "0.35.4",
     "tailwindcss": "4.3.3",
     "typescript": "~5.9.3"
   }
