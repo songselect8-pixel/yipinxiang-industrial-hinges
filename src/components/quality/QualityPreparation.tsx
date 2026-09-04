@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
@@ -60,7 +61,7 @@ function QualityFaq() {
   return (
     <section className="section quality-faq" aria-labelledby="quality-faq-title">
       <div className="shell quality-faq-grid">
-        <div><Eyebrow>Buyer questions</Eyebrow><h2 id="quality-faq-title">Quality Control FAQ</h2><p>Answers stay within the catalog’s published dimensions, checking statement and packaging examples.</p><a href="#rfq" className="text-link">Discuss Your Requirement <Arrow /></a></div>
+        <div><Eyebrow>Buyer questions</Eyebrow><h2 id="quality-faq-title">Quality Control FAQ</h2><p>Answers stay within the catalog’s published dimensions, checking statement and packaging examples.</p><Link href="#rfq" className="text-link">Discuss Your Requirement <Arrow /></Link></div>
         <div className="quality-faq-list">
           {qualityFaqs.map((item, index) => <details key={item.question} open={index === 0}><summary><span>{String(index + 1).padStart(2, "0")}</span>{item.question}<i aria-hidden="true" /></summary><p>{item.answer}</p></details>)}
         </div>

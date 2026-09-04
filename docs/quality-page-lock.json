@@ -51,7 +51,7 @@
   "files": [
     {
       "path": "src/app/quality/page.tsx",
-      "sha256": "6c768023d5539af68750bdca3b27beacaf498e4d69cc5953283bb07e606d227e"
+      "sha256": "93cb5736607b015f6c6c73dda812b1c1bc359703c3eb3ce7cf2c5dec7600a326"
     },
     {
       "path": "src/app/quality/quality.css",
@@ -59,23 +59,23 @@
     },
     {
       "path": "src/components/quality/QualityPageContent.tsx",
-      "sha256": "9f65ae626a26cb1c2b8654dba2c4d9962d54e737c5920d1b3526582e5e3c0b2d"
+      "sha256": "e49bf7960fe8badee49bdb08dd8a2570143f05da2aa6e93347521063d7c47c6a"
     },
     {
       "path": "src/components/quality/QualityTechnicalEvidence.tsx",
-      "sha256": "d15eedb9c8cbe6b938d6b53f9f4d32d8a41d2a3da55517f6352c9728a6e27f25"
+      "sha256": "7d355aae57be4b54cb8bf5795db35a53f3480fbc6eacd79fbf9e98c9f1d220c7"
     },
     {
       "path": "src/components/quality/QualityProductExamples.tsx",
-      "sha256": "15a3612eb2b3103487bc181230970296801574b6e8143a657353fa9d281330f4"
+      "sha256": "42d8d72300086769d2e51ec6c819bbed2103fd6a7b9876dc4cfa54f78d1fd0e5"
     },
     {
       "path": "src/components/quality/QualityPreparation.tsx",
-      "sha256": "04207764024d86c9fa0efa40751f53eb1e53f153db31ef7f4fbf79fdc9bffe26"
+      "sha256": "31fb417dd110c6b13b810bd955119fa96adcad1a179f9bf786200dd759b0625f"
     },
     {
       "path": "src/components/quality/QualityRFQSection.tsx",
-      "sha256": "5a4a5ab4b0fc5c5ea289bd7a23000fdbe0cc05ce914caec12fd5ef58cdc28cdf"
+      "sha256": "7a767e456891af931b4dc7f2405fca20528d850be18fd2f70951ff0dc70e7714"
     },
     {
       "path": "src/data/quality.ts",

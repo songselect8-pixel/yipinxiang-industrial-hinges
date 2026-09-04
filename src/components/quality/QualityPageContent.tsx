@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
 import { SupportingVisual } from "@/components/ui/SupportingVisual";
@@ -11,7 +12,7 @@ function QualityHero() {
     <section className="quality-hero" aria-labelledby="quality-page-title">
       <div className="shell">
         <nav className="quality-breadcrumb" aria-label="Breadcrumb">
-          <ol><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">Quality Control</li></ol>
+          <ol><li><Link href="/">Home</Link></li><li aria-hidden="true">/</li><li aria-current="page">Quality Control</li></ol>
         </nav>
         <div className="quality-hero-grid">
           <div className="quality-hero-copy">
@@ -19,8 +20,8 @@ function QualityHero() {
             <h1 id="quality-page-title">Quality Checks Throughout Production</h1>
             <p>Dimensional checks and in-process inspection help support product consistency throughout manufacturing. Published specifications and confirmed requirements provide the reference.</p>
             <div className="quality-hero-actions">
-              <a href="#rfq" className="button button-primary">Discuss Your Requirement <Arrow /></a>
-              <a href="/products#selection-overview" className="button button-outline">View Product Specifications <Arrow /></a>
+              <Link href="#rfq" className="button button-primary">Discuss Your Requirement <Arrow /></Link>
+              <Link href="/products#selection-overview" className="button button-outline">View Product Specifications <Arrow /></Link>
             </div>
             <div className="quality-hero-tags" aria-label="Quality reference areas">
               <span>Published dimensions</span><span>Original drawings</span><span>In-process checks</span>
@@ -42,7 +43,7 @@ function QualityApproach() {
           title={<span id="quality-approach-title">Checks Are Part of the Process</span>}
           description="The catalog connects production-stage checking with technical references and organized handling. No numerical targets are added to these source statements."
         >
-          <a href="#dimensional-checks" className="text-link section-heading-link">Review the checking references <Arrow diagonal /></a>
+          <Link href="#dimensional-checks" className="text-link section-heading-link">Review the checking references <Arrow diagonal /></Link>
         </SectionHeading>
         <div className="quality-approach-ledger">
           {qualityApproach.map((item, index) => (

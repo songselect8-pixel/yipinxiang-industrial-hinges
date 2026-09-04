@@ -16,7 +16,7 @@ export function ProductGallery({ images, profileLabel }: { images: readonly Prod
     <figure id={galleryId}>
       <ImageEnlarger media={image} className={`detail-gallery-main${image.kind === "catalog-composite" ? " is-drawing" : ""}`}>
         <span className="detail-image-label micro-label">{image.kind === "photograph" ? profileLabel : "Original catalog reference"}</span>
-        <Image key={image.src} src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width: 767px) 100vw, 50vw" quality={85} loading="eager" unoptimized={image.kind === "catalog-composite"} />
+        <Image key={image.src} src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width: 767px) 100vw, 50vw" quality={85} loading="eager" unoptimized={image.kind === "catalog-composite" && !process.env.NEXT_PUBLIC_BASE_PATH} />
         <span className="detail-image-expand">Enlarge <Arrow diagonal /></span>
       </ImageEnlarger>
       <figcaption>{image.caption}</figcaption>

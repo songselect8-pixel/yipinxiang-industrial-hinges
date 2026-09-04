@@ -1,7 +1,8 @@
+import Link from "next/link";
 import type { ResourceTocItem } from "@/content/resources/types";
 
 function TocLinks({ items }: { items: readonly ResourceTocItem[] }) {
-  return <ol>{items.map((item) => <li className={item.level === 3 ? "is-subheading" : undefined} key={item.id}><a href={`#${item.id}`}>{item.title}</a></li>)}</ol>;
+  return <ol>{items.map((item) => <li className={item.level === 3 ? "is-subheading" : undefined} key={item.id}><Link href={`#${item.id}`}>{item.title}</Link></li>)}</ol>;
 }
 
 export function ResourceTableOfContents({ items }: { items: readonly ResourceTocItem[] }) {

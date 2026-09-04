@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { useEffect } from "react";
 import { families, getVariants } from "@/data/catalog";
@@ -58,7 +59,7 @@ export function TechnicalRange() {
             </details>;
           })}
         </div>
-        <div className="range-footer"><p>Need a dimension or configuration beyond the listed range?</p><a href="#rfq" className="text-link">Send your requirement <Arrow /></a></div>
+        <div className="range-footer"><p>Need a dimension or configuration beyond the listed range?</p><Link href="#rfq" className="text-link">Send your requirement <Arrow /></Link></div>
       </div>
     </section>
   );

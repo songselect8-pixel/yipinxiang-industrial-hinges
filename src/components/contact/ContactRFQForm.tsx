@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { Arrow } from "@/components/ui/Arrow";
 import { contactProductOptions } from "@/data/contact";
@@ -118,7 +119,7 @@ export function ContactRFQForm({ submissionEndpoint }: { submissionEndpoint: str
         <div id="contact-form-result" ref={resultRef} tabIndex={-1} className={delivery === "invalid" || delivery === "failed" ? "form-error-summary" : "form-notice"} role={delivery === "invalid" || delivery === "failed" ? "alert" : "status"}>
           <strong>{delivery === "invalid" ? "Please check the highlighted fields." : notice?.title}</strong>
           {delivery === "invalid"
-            ? <ul>{Object.entries(errors).map(([name, message]) => <li key={name}><a href={`#${summaryTarget(name)}`}>{message}</a></li>)}</ul>
+            ? <ul>{Object.entries(errors).map(([name, message]) => <li key={name}><Link href={`#${summaryTarget(name)}`}>{message}</Link></li>)}</ul>
             : <p>{notice?.text}</p>}
         </div>
       )}

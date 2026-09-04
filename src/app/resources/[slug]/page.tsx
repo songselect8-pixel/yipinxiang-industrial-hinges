@@ -1,3 +1,4 @@
+import { joinSiteUrl } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ResourceArticleTemplate } from "@/components/resources/ResourceArticleTemplate";
@@ -44,12 +45,12 @@ export default async function ResourceArticlePage({ params }: ResourcePageProps)
   const { slug } = await params;
   const article = getResourceArticle(slug);
   if (!article || !isPublicResource(article)) notFound();
-  const url = new URL(`/resources/${article.slug}`, baseUrl).href;
+  const url = joinSiteUrl(baseUrl, `/resources/${article.slug}`);
   const breadcrumb = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", baseUrl).href },
-      { "@type": "ListItem", position: 2, name: "Resources", item: new URL("/resources", baseUrl).href },
+      { "@type": "ListItem", position: 1, name: "Home", item: joinSiteUrl(baseUrl, "/") },
+      { "@type": "ListItem", position: 2, name: "Resources", item: joinSiteUrl(baseUrl, "/resources") },
       { "@type": "ListItem", position: 3, name: article.title, item: url },
     ],
   };
@@ -59,7 +60,7 @@ export default async function ResourceArticlePage({ params }: ResourcePageProps)
     description: article.description,
     datePublished: article.publishedAt,
     dateModified: article.updatedAt ?? article.publishedAt,
-    image: new URL(article.featuredImage, baseUrl).href,
+    image: joinSiteUrl(baseUrl, article.featuredImage),
     mainEntityOfPage: url,
     publisher: { "@type": "Organization", name: resourcePublisher.name },
   };

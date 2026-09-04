@@ -1,3 +1,4 @@
+import { joinSiteUrl } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { InquiryProvider } from "@/components/inquiry/InquiryProvider";
 import { Footer } from "@/components/navigation/Footer";
@@ -39,15 +40,15 @@ export default function AboutUsPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", baseUrl).href },
-      { "@type": "ListItem", position: 2, name: "About Us", item: new URL("/about-us", baseUrl).href },
+      { "@type": "ListItem", position: 1, name: "Home", item: joinSiteUrl(baseUrl, "/") },
+      { "@type": "ListItem", position: 2, name: "About Us", item: joinSiteUrl(baseUrl, "/about-us") },
     ],
   };
   const organization = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: aboutCompany.name,
-    url: new URL("/about-us", baseUrl).href,
+    url: joinSiteUrl(baseUrl, "/about-us"),
   };
 
   return (

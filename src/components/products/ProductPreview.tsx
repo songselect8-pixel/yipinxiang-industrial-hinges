@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import { getFamily, getVariants } from "@/data/catalog";
 import type { ProductFamily } from "@/data/products";
@@ -16,12 +17,12 @@ export function ProductPreview({ product, onDismiss }: { product: ProductFamily 
     {product && family && <>
       <div className="product-preview-heading"><Eyebrow>Technical product preview</Eyebrow><h2 id="product-preview-title">{product.name}</h2></div>
       <div className="product-preview-intro">
-        <figure className="product-preview-image">{imageIsDrawing && product.drawing ? <a href={product.drawing.src} target="_blank" rel="noreferrer" aria-label="Open the original catalog drawing at full size in a new tab"><Image src={product.images[0].src} alt={product.images[0].alt} width={800} height={800} quality={85} loading="eager" sizes="(max-width: 599px) 90vw, 320px" /></a> : <Image src={product.images[0].src} alt={product.images[0].alt} width={800} height={800} quality={85} loading="eager" sizes="(max-width: 599px) 90vw, 320px" />}{imageIsDrawing && product.drawing && <figcaption>Original catalog photograph & reference drawing<br />Select the drawing to view at full size.</figcaption>}</figure>
+        <figure className="product-preview-image">{imageIsDrawing && product.drawing ? <Link href={product.drawing.src} target="_blank" rel="noreferrer" aria-label="Open the original catalog drawing at full size in a new tab"><Image src={product.images[0].src} alt={product.images[0].alt} width={800} height={800} quality={85} loading="eager" sizes="(max-width: 599px) 90vw, 320px" /></Link> : <Image src={product.images[0].src} alt={product.images[0].alt} width={800} height={800} quality={85} loading="eager" sizes="(max-width: 599px) 90vw, 320px" />}{imageIsDrawing && product.drawing && <figcaption>Original catalog photograph & reference drawing<br />Select the drawing to view at full size.</figcaption>}</figure>
         <div className="product-preview-copy"><p>{product.shortDescription}</p>
           <p className="product-preview-source">Catalog {product.technicalSpecifications.sourcePages.map((page) => `p${page}`).join(" / ")} · {product.dimensions.length} published {product.id.includes("type") ? "models" : product.dimensions.length === 1 ? "size" : "sizes"}</p>
           {product.applications.length > 0 && <div className="product-preview-applications"><h3>Catalog applications</h3><p>{product.applications.map((item) => item.name).join(" · ")}</p>{product.applications[0].scope === "profile" && <small>Water-drop family context from p4; confirm the hinge for your installation.</small>}</div>}
           {product.customization && <p className="product-preview-custom">{product.customization.description}</p>}
-          <a href={productInquiryHref(product.id)} className="button button-primary">Request a Quote <Arrow /></a>
+          <Link href={productInquiryHref(product.id)} className="button button-primary">Request a Quote <Arrow /></Link>
         </div>
       </div>
       <div className="product-preview-specs"><h3>Technical specifications</h3>

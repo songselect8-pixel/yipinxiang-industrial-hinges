@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
 import { SupportingVisual } from "@/components/ui/SupportingVisual";
@@ -12,7 +13,7 @@ function CapabilityOverview() {
           title={<span id="manufacturing-overview-title">Manufacturing Capabilities from Processing to Assembly</span>}
           description="The catalog identifies these factory capabilities. They are presented as capability areas rather than a claimed chronological process."
         >
-          <a href="#capability-summary" className="text-link section-heading-link">Review the technical summary <Arrow diagonal /></a>
+          <Link href="#capability-summary" className="text-link section-heading-link">Review the technical summary <Arrow diagonal /></Link>
         </SectionHeading>
         <div className="manufacturing-capability-ledger">
           {manufacturingCapabilities.map((capability, index) => (

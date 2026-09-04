@@ -115,11 +115,11 @@
     },
     {
       "path": "src/components/resources/ResourceRichText.tsx",
-      "sha256": "763d34d83da31bd53ace019c32f2ec63205d160f86202683714135f982b27710"
+      "sha256": "9bd21dbb00015189a0df1ba0a452ba5753347cbda924b60c6bb49b76b9861c70"
     },
     {
       "path": "src/components/resources/ResourceTechnicalTable.tsx",
-      "sha256": "30e90d6e729314c628948f86e1c3fe414f96bd61a78ae54106602e5108da367f"
+      "sha256": "5f704fa3fed9250c1b517d8ec322e047b393139db9fcae7f6f34f049b6a79e0d"
     },
     {
       "path": "src/components/resources/ResourceArticleBody.tsx",
@@ -127,23 +127,23 @@
     },
     {
       "path": "src/components/resources/ResourceTableOfContents.tsx",
-      "sha256": "2910e7f9eabe43cc2beeff3d6aa8e73622fbb8f7de44acebd81d16ab1dc39008"
+      "sha256": "63d007dd3f893d4f2212847d5e74673eaddcd783d1c699b254fe12205b73431d"
     },
     {
       "path": "src/components/resources/ResourceCard.tsx",
-      "sha256": "80ebcdbd5bf60822a7dcc0ba344205d491d3694ea45d7251da8d46f2bf977e97"
+      "sha256": "9921e7e0b83c260b98a479fad95cdb63abc44815a999503a553e93763964882c"
     },
     {
       "path": "src/components/resources/ResourcesIndexContent.tsx",
-      "sha256": "9339b2cb2a6b21bb28929194035c19fa5e7f7562ea3cf6c3e5e6d00656353e93"
+      "sha256": "abe07736537051284b4a15db787522354f111f0963611f27f06c436b1a0c38cb"
     },
     {
       "path": "src/components/resources/ResourceArticleTemplate.tsx",
-      "sha256": "3812684752a011649c9d6fffbc822a7872539b5a9fa0fd7f227b6e7579ee735b"
+      "sha256": "5b2edd3fe9d72127f8b78c81c1323f63ab003b798b9ccf57f31f25609b0ec093"
     },
     {
       "path": "src/app/resources/page.tsx",
-      "sha256": "b776669ba52c5f4861101ecbe8ea0aad01ef02da2d40e4b63dd67f735e57e6d3"
+      "sha256": "9b4d13e19e4c69dc2fba6a20e7343640518726ea415b1a10fcb1fa090231200b"
     },
     {
       "path": "src/app/resources/resources.css",
@@ -151,7 +151,7 @@
     },
     {
       "path": "src/app/resources/[slug]/page.tsx",
-      "sha256": "61a5169413b44a829dc32e7af64a160beaf2052ca3c9beeecea37ea1779d6629"
+      "sha256": "5bdc2c29490f3bbf9a6b2861923d6b5cec7bfed85e9b56d46d3c6d787a1c2f7a"
     },
     {
       "path": "src/app/resources/[slug]/article.css",
@@ -159,11 +159,11 @@
     },
     {
       "path": "src/app/feed.xml/route.ts",
-      "sha256": "b7825a88f7e8eb889191278ec1e3c0e336cd608e4bd3826e88b135cd5d788246"
+      "sha256": "b45a258a95fb36836f916cca1340d634b76f86d7d6a38f30ab95b8779c5e9d51"
     },
     {
       "path": "src/app/sitemap.ts",
-      "sha256": "916bd1f6e49fb8c456960001f9414e6d6b7e142631dfbbd6b0baeea0e15f86d8"
+      "sha256": "bfad18a4e991693c4394da4cdf86edced9c336e4435eb7466a34788c8a0019f6"
     },
     {
       "path": "src/data/site.ts",
@@ -171,11 +171,11 @@
     },
     {
       "path": "src/components/navigation/Header.tsx",
-      "sha256": "1487d645036c1bf4bbf06adc839309748dac183aae58cec5ed1573b3df1ac3bd"
+      "sha256": "21b1013994556fa06950d026370437b2a0a8e1db9911406ce681787cf9f11800"
     },
     {
       "path": "src/components/navigation/Footer.tsx",
-      "sha256": "b8aaaa97864f9e6c5229809ae837dbe5c63a2a119a218c7ec2dd16601239641a"
+      "sha256": "81d87c42a6464e44540c55ffbb30f67317327a5e6f8b38ffe99b8332df384b95"
     },
     {
       "path": "src/app/globals.css",
@@ -183,15 +183,15 @@
     },
     {
       "path": "src/app/products/page.tsx",
-      "sha256": "688455428a81ee6443eed7e5e4dfd1523f192ff8f96af4d9bcd23b0be0d83bfa"
+      "sha256": "889eaf9b98521ceba980b26134f08399f51698afb26123544ee48ca01219633c"
     },
     {
       "path": "src/components/applications/ApplicationsPageContent.tsx",
-      "sha256": "23e9eded6e5e11451c880230419d0a34554ebb1206a172cbbe525f039c01615b"
+      "sha256": "4c4a14d85ca09c2d881843268cb8fd6f8744223ef9cc2aeb3168425e994fc4d5"
     },
     {
       "path": "src/components/custom-hinges/CustomHingesPageContent.tsx",
-      "sha256": "009faec56cdcbcfa2f7dc7ee06f0ccf0f62bc564b4e743b55dd97e1ef839303a"
+      "sha256": "eed8e7c813592dd72cc93bd46920353a358c61d07998647b856811807f3631f7"
     },
     {
       "path": "src/app/custom-hinges/custom-hinges.css",
@@ -199,7 +199,7 @@
     },
     {
       "path": "src/components/quality/QualityTechnicalEvidence.tsx",
-      "sha256": "d15eedb9c8cbe6b938d6b53f9f4d32d8a41d2a3da55517f6352c9728a6e27f25"
+      "sha256": "7d355aae57be4b54cb8bf5795db35a53f3480fbc6eacd79fbf9e98c9f1d220c7"
     },
     {
       "path": "src/app/quality/quality.css",
@@ -207,11 +207,11 @@
     },
     {
       "path": "src/components/products/detail/ProductRelatedGuides.tsx",
-      "sha256": "bf796ad3d2f0c4945b20c12ce81993e18a9ab5ad0ff25c4c847952b661a115ca"
+      "sha256": "31f1e096757ee95628670199b90db96ae19582beda8978cdec6525c6509cce06"
     },
     {
       "path": "src/components/products/detail/ProductDetailTemplate.tsx",
-      "sha256": "11ac57f15f44e5ae7cfb9272bf4b8de48350928ce20481adf19d36c27efc72f2"
+      "sha256": "255fd7bd3f0200522d887d3a37da70a62b5701481eb7cdbe99fbfb3bd6937b33"
     },
     {
       "path": "src/app/products/bearing-weld-on-hinges/product-detail.css",

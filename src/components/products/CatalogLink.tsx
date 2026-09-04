@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { ReactNode, MouseEvent } from "react";
 
 export function CatalogLink({ familyId, className, children, onNavigate, ariaLabel, href, onClick }: {
@@ -21,5 +22,5 @@ export function CatalogLink({ familyId, className, children, onNavigate, ariaLab
     onNavigate?.();
   }
 
-  return <a href={href ?? `#range-${familyId}`} className={className} onClick={navigate} aria-label={ariaLabel}>{children}</a>;
+  return <Link href={href ?? `#range-${familyId}`} className={className} onClick={navigate} aria-label={ariaLabel}>{children}</Link>;
 }

@@ -1,3 +1,4 @@
+import { joinSiteUrl } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { InquiryProvider } from "@/components/inquiry/InquiryProvider";
 import { Footer } from "@/components/navigation/Footer";
@@ -36,8 +37,8 @@ export default function QualityPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", baseUrl).href },
-      { "@type": "ListItem", position: 2, name: "Quality Control", item: new URL("/quality", baseUrl).href },
+      { "@type": "ListItem", position: 1, name: "Home", item: joinSiteUrl(baseUrl, "/") },
+      { "@type": "ListItem", position: 2, name: "Quality Control", item: joinSiteUrl(baseUrl, "/quality") },
     ],
   };
 

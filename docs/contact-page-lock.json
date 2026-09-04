@@ -37,10 +37,10 @@
     "A future server-side delivery connection may replace only the configured delivery boundary and must preserve this locked page composition and failure honesty."
   ],
   "files": [
-    { "path": "src/app/contact/page.tsx", "sha256": "677f1b3ebc26fb97b99fdbe579afc94d0bedbd27aaaf7aa551200c7066cf80c9" },
+    { "path": "src/app/contact/page.tsx", "sha256": "b9f4db1a50d3b1f4dd95880e794748170e73e4eaf105e79f966d2ac1745a4c50" },
     { "path": "src/app/contact/contact.css", "sha256": "2f85385859991205439261cc6fbfb020e27456146e29fba28a5376431485d27f" },
-    { "path": "src/components/contact/ContactPageContent.tsx", "sha256": "f0b1b78c3747476ad001f11eb84cc08188148550f92861b0387ea267781c9eab" },
-    { "path": "src/components/contact/ContactRFQForm.tsx", "sha256": "9b7095c0d8d7551fb5883bc64f8deba2d127a8e6bad25e4a4b288b86d1e35578" },
+    { "path": "src/components/contact/ContactPageContent.tsx", "sha256": "b6e4a22e83b3bf34e4c84f2edb9cf7adf2d89e03be28b59bcb62f02745974c0c" },
+    { "path": "src/components/contact/ContactRFQForm.tsx", "sha256": "5754cc122e53ec2b632f4e1c642d2c902fb63fadb94f671a7ab62416a6780f2d" },
     { "path": "src/data/contact.ts", "sha256": "277cb64647ab30f32d585f6563b3673f2e48759b825e1cf6d31ef7e89bf13080" },
     { "path": "src/data/contact-rfq.ts", "sha256": "ab3e6de2bd73a57c6565016673db0882a60ddd9e9592ea2c916a26c03eaccea5" },
     { "path": "docs/contact-rfq-configuration.md", "sha256": "ee4432027ee39998883e247b1863840d0cdefabefea485661d2ae8a2f41b1183" }

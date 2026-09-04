@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState, type MouseEvent } from "react";
 import { getFamily } from "@/data/catalog";
 import { products, getProductBySlug, productHref, type ProductFamily } from "@/data/products";
@@ -59,7 +60,7 @@ export function ProductFinder() {
     <section id="product-range" className="section product-finder-section" aria-labelledby="product-finder-title">
       <div className="shell">
         <SectionHeading eyebrow="The product range" title={<span id="product-finder-title">Find your hinge.</span>}>
-          <a href="#selection-overview" className="text-link section-heading-link"><span className="compare-link-full">Compare hinge types</span><span className="compare-link-short">Compare</span><Arrow /></a>
+          <Link href="#selection-overview" className="text-link section-heading-link"><span className="compare-link-full">Compare hinge types</span><span className="compare-link-short">Compare</span><Arrow /></Link>
         </SectionHeading>
         <div className="desktop-product-filters"><ProductFilters value={filters} onChange={changeFilters} idPrefix="desktop-filter" /></div>
         <div className="product-results-bar">
@@ -77,7 +78,7 @@ export function ProductFinder() {
             <div className="product-card-specs"><span className="micro-label">{count ? "Matching catalog examples" : "Catalog examples"}</span><ProductDimensions dimensions={exampleDimensions} showPage={product.id === "flag"} /></div>
             {applications.length > 0 && <div className="product-card-application"><span>Catalog use</span><p>{applications[0].scope === "profile" ? "Steel doors & industrial cabinets" : "Gates, trailer doors & ramps"}</p></div>}
           </ProductCard>;
-        })}</div> : <div className="product-empty-state"><h3>No catalog match for this combination.</h3><p>Try removing a filter, or send the required size and structure for review.</p><div><button className="button button-outline" type="button" onClick={() => changeFilters(emptyProductFilters)}>Clear filters <Arrow /></button><a className="text-link" href="/#rfq">Discuss a custom requirement <Arrow /></a></div></div>}
+        })}</div> : <div className="product-empty-state"><h3>No catalog match for this combination.</h3><p>Try removing a filter, or send the required size and structure for review.</p><div><button className="button button-outline" type="button" onClick={() => changeFilters(emptyProductFilters)}>Clear filters <Arrow /></button><Link className="text-link" href="/#rfq">Discuss a custom requirement <Arrow /></Link></div></div>}
         <p className="catalog-source-footnote">Only listed combinations are shown. Applications describe catalog family or series use; confirm suitability for your installation.</p>
       </div>
     </section>
@@ -89,7 +90,7 @@ export function ProductFinder() {
           <table className="technical-table product-comparison-table"><caption className="sr-only">Industrial hinge families, construction and original catalog dimensions</caption>
             <colgroup><col className="comparison-family-column" /><col className="comparison-structure-column" /><col className="comparison-size-column" /><col className="comparison-details-column" /></colgroup>
             <thead><tr><th scope="col">Hinge type</th><th scope="col">Structure</th><th scope="col">Catalog examples</th><th scope="col">Technical details</th></tr></thead>
-            <tbody>{products.map((product) => <tr key={product.id}><th scope="row">{getFamily(product.id)!.shortName}</th><td>{product.structure}</td><td><ProductDimensions dimensions={product.dimensions} showPage={product.id === "flag"} /></td><td className="table-action"><a href={productHref(product.id)} onClick={(event) => viewProduct(event, product)} aria-label={`View specifications for ${product.name}`}>View Details <Arrow /></a></td></tr>)}</tbody>
+            <tbody>{products.map((product) => <tr key={product.id}><th scope="row">{getFamily(product.id)!.shortName}</th><td>{product.structure}</td><td><ProductDimensions dimensions={product.dimensions} showPage={product.id === "flag"} /></td><td className="table-action"><Link href={productHref(product.id)} onClick={(event) => viewProduct(event, product)} aria-label={`View specifications for ${product.name}`}>View Details <Arrow /></Link></td></tr>)}</tbody>
           </table>
         </div>
         <p className="catalog-source-footnote">Examples are individual catalog entries, not continuous size ranges. Numbered series retain the catalog’s original symbols and unprinted units.</p>

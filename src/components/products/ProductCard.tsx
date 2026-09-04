@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import type { MouseEvent, ReactNode } from "react";
 import { getVariants, type CatalogFamily } from "@/data/catalog";
@@ -28,7 +29,7 @@ export function ProductCard({ family, index, href, onViewDetails, countLabel, ch
         {children}
         {quoteHref ? <div className="product-card-actions">
           <CatalogLink familyId={family.id} href={href} onClick={onViewDetails} className="text-link" ariaLabel={`View details for ${family.name}`}>{actionLabel} <Arrow /></CatalogLink>
-          <a href={quoteHref} className="text-link product-card-quote" aria-label={`Request a quote for ${family.name}`}>Request a Quote</a>
+          <Link href={quoteHref} className="text-link product-card-quote" aria-label={`Request a quote for ${family.name}`}>Request a Quote</Link>
         </div> : <CatalogLink familyId={family.id} href={href} onClick={onViewDetails} className="text-link">{actionLabel} <Arrow /></CatalogLink>}
       </div>
     </article>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
@@ -20,7 +21,7 @@ function CustomManufacturingBridge() {
           <Eyebrow>Custom manufacturing connection</Eyebrow>
           <h2 id="manufacturing-custom-title">Built Around Confirmed Requirements</h2>
           <p>The catalog states an ability to develop and produce products according to client requirements. Send the available dimensions or drawing for review before the requested configuration is confirmed.</p>
-          <a href="/custom-hinges" className="button button-primary">Explore Custom Hinges <Arrow /></a>
+          <Link href="/custom-hinges" className="button button-primary">Explore Custom Hinges <Arrow /></Link>
         </div>
         <SupportingVisual asset="engineering" sizes="(max-width: 768px) calc(100vw - 40px), 50vw" />
       </div>
@@ -39,7 +40,7 @@ function ProductionChecking() {
           <div className="manufacturing-quality-points">
             {inProcessQuality.map((item) => <div key={item.title}><h3>{item.title}</h3><p>{item.description}</p></div>)}
           </div>
-          <a href="/quality" className="text-link">Explore Quality Control <Arrow diagonal /></a>
+          <Link href="/quality" className="text-link">Explore Quality Control <Arrow diagonal /></Link>
         </div>
         <SupportingVisual asset="quality" sizes="(max-width: 768px) calc(100vw - 40px), 50vw" />
       </div>
@@ -79,7 +80,7 @@ function PackagingEvidence() {
             </article>
           ))}
         </div>
-        <div className="manufacturing-packaging-note"><p>Packaging shown above is series-specific and is not presented as a universal method for every hinge.</p><a href="#rfq" className="text-link">Ask About Packaging <Arrow /></a></div>
+        <div className="manufacturing-packaging-note"><p>Packaging shown above is series-specific and is not presented as a universal method for every hinge.</p><Link href="#rfq" className="text-link">Ask About Packaging <Arrow /></Link></div>
       </div>
     </section>
   );

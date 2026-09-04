@@ -41,7 +41,7 @@
   "files": [
     {
       "path": "src/app/applications/page.tsx",
-      "sha256": "0d4d07e953d455aecee338c467333e38d5f5e9eb1c78c3baf038df8b54b8d2cb"
+      "sha256": "f393bb04bf159c35c400f2d7d55db222d67cc631a597277adfcd09d8f1f0e4f3"
     },
     {
       "path": "src/app/applications/applications.css",
@@ -49,15 +49,15 @@
     },
     {
       "path": "src/components/applications/ApplicationsPageContent.tsx",
-      "sha256": "23e9eded6e5e11451c880230419d0a34554ebb1206a172cbbe525f039c01615b"
+      "sha256": "4c4a14d85ca09c2d881843268cb8fd6f8744223ef9cc2aeb3168425e994fc4d5"
     },
     {
       "path": "src/components/applications/ApplicationDetailSection.tsx",
-      "sha256": "52d3c2ad1fa6054a2a3a08c12c3d1e05b34177920dae8759aff5c49cb7e8a6f1"
+      "sha256": "4c960d5c8d90a3fb7bbcb8914eed9797cd8e1f238551052279481b8401714d92"
     },
     {
       "path": "src/components/applications/ApplicationInquiryLink.tsx",
-      "sha256": "36e961b25ae0e053a49c3e5dc082e5676b326d6e5801393ec240ae6bd9d8a185"
+      "sha256": "422abef25104cfeeef89ebbbf7fdde52d566b4f7ba2f1bcb5f7a25da7b86993c"
     },
     {
       "path": "src/data/applications.ts",

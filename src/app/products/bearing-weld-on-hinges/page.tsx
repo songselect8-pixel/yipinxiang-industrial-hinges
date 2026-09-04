@@ -1,3 +1,4 @@
+import { joinSiteUrl } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { bearingDetail } from "@/data/product-details";
 import { getProduct } from "@/data/products";
@@ -21,9 +22,9 @@ export default function BearingWeldOnHingesPage() {
   const breadcrumb = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", baseUrl).href },
-      { "@type": "ListItem", position: 2, name: "Products", item: new URL("/products", baseUrl).href },
-      { "@type": "ListItem", position: 3, name: bearingDetail.title, item: new URL(product.detailPath, baseUrl).href },
+      { "@type": "ListItem", position: 1, name: "Home", item: joinSiteUrl(baseUrl, "/") },
+      { "@type": "ListItem", position: 2, name: "Products", item: joinSiteUrl(baseUrl, "/products") },
+      { "@type": "ListItem", position: 3, name: bearingDetail.title, item: joinSiteUrl(baseUrl, product.detailPath) },
     ],
   };
 

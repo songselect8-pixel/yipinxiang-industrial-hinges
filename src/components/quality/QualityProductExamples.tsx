@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
@@ -17,10 +18,10 @@ function RepresentativeProducts() {
             const catalogComposite = item.productId === "20-type";
             return (
               <article className="quality-product-card" key={item.productId}>
-                <a href={item.href} className={`quality-product-image${catalogComposite ? " is-composite" : ""}`}>
+                <Link href={item.href} className={`quality-product-image${catalogComposite ? " is-composite" : ""}`}>
                   <Image src={item.image} alt={item.imageAlt} width={catalogComposite ? 825 : 800} height={catalogComposite ? 864 : 800} quality={85} sizes="(max-width: 599px) calc(100vw - 40px), (max-width: 999px) 50vw, 33vw" />
                   <span>View family <Arrow /></span>
-                </a>
+                </Link>
                 <div className="quality-product-copy">
                   <span className="micro-label">Source-bound product reference · catalog p{item.sourcePage}</span>
                   <h3>{item.name}</h3>
@@ -29,7 +30,7 @@ function RepresentativeProducts() {
                     {item.reference.labels.map((label, index) => <div key={label}><dt>{label}</dt><dd>{item.reference.values[index]}</dd></div>)}
                   </dl>
                   <p className="quality-reference-note">{item.reference.note}</p>
-                  <a href={`${item.href}#specifications`} className="text-link">View Full Specifications <Arrow /></a>
+                  <Link href={`${item.href}#specifications`} className="text-link">View Full Specifications <Arrow /></Link>
                 </div>
               </article>
             );
@@ -49,7 +50,7 @@ function CustomRequirementConnection() {
           <Eyebrow>Quality & custom requirements</Eyebrow>
           <h2 id="quality-custom-title">Custom Requirements Start With Confirmed Dimensions</h2>
           <p>For a different size or structure, the available drawing, dimensions and application details help establish a clear requirement for production and checking discussion.</p>
-          <a href="/custom-hinges" className="button button-primary">Send Your Drawing <Arrow /></a>
+          <Link href="/custom-hinges" className="button button-primary">Send Your Drawing <Arrow /></Link>
         </div>
         <div className="quality-custom-requirements">
           <span className="micro-label">Information to provide</span>

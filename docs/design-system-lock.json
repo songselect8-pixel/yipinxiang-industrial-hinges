@@ -1,5 +1,10 @@
 {
   "status": "LOCKED",
+  "deploymentCompatibility": {
+    "recordedAt": "2026-09-04",
+    "scope": "GitHub Pages static export and repository-subpath navigation",
+    "compatibilityNote": "Internal anchors were upgraded to Next.js Link and static assets receive the Pages base path. This changes routing infrastructure only; the approved markup content, CSS, component composition and visual design remain locked."
+  },
   "requestedBy": "User lock instruction before Applications page implementation",
   "recordedAt": "2026-08-31T14:01:49.215Z",
   "revalidatedAt": "2026-09-02T22:53:59.6791237+08:00",
@@ -48,35 +53,35 @@
     },
     {
       "path": "src/components/sections/Applications.tsx",
-      "sha256": "85f30e87b9c5f6796ea32e3dcd4da63cc1423fb6e1d55fad7d45c6ca20066caa"
+      "sha256": "8236fe8713eaf181d6bb5bbdc72d4e46a10c558887afa58c07179a7808d67d3a"
     },
     {
       "path": "src/components/sections/TechnicalRange.tsx",
-      "sha256": "26734c022c3481d3ecf55c14a8f7dee6b822835622388a1634069d809462a1da"
+      "sha256": "5600f4b29dbeba62a9c5be60f59018b492c2a83a9cb5b19dad830dbaa398822e"
     },
     {
       "path": "src/components/sections/FactorySection.tsx",
-      "sha256": "3b92814b45fa5780e3d5b082d2713c0d1204016f288717b9d35c6d10fe64dd88"
+      "sha256": "f26b474e1cf06c7f6207a2d77a8692f202d46dc27fd3e6582f0486c794b9bd06"
     },
     {
       "path": "src/components/sections/QualitySection.tsx",
-      "sha256": "f07e660469cdb9ec945112d4a7f291f15a2fe169b2175e2fddce7af31e9fba28"
+      "sha256": "9350a523c4a57c9835e87885666ac72868590d6e8f13785691a8f05c814b81f6"
     },
     {
       "path": "src/components/sections/CustomManufacturing.tsx",
-      "sha256": "ba00a178a5d8ebf689cbd1a9777602ef9fa1837eea217d1a5907c212ec4615bb"
+      "sha256": "ed6a012f142acc43f2146d416ddebf772aa355a82d772b9801e9cfce474ef259"
     },
     {
       "path": "src/components/sections/PackagingSection.tsx",
-      "sha256": "783f2b779b99ead53c63ade5660a407b4c7d5af1e92a303a88ac1db3bbccef6d"
+      "sha256": "8d65218a5634023f1495408e80aaf2c3bed61ceb3ccba47de93df817234b4936"
     },
     {
       "path": "src/components/sections/Hero.tsx",
-      "sha256": "66192edbe0a07d8b45087757988bf7cce27cd7105dd8537ca2e8ab2fd897a635"
+      "sha256": "3625747c9117cfa4f31ff3b35cc0dd8a0c7aaf23d31f99fbebc14a66ad16df23"
     },
     {
       "path": "src/components/sections/ProductGrid.tsx",
-      "sha256": "f366933bc87679fa3c704b281e950eff403b0fa99f282bdd6e7cd4b43c0f72bb"
+      "sha256": "71d6dc0f269f4a5588368ff1a6a698f02e5933171f56f545542c4eb55c27d9b9"
     },
     {
       "path": "src/components/sections/WhyChooseUs.tsx",
@@ -88,19 +93,19 @@
     },
     {
       "path": "src/components/products/ProductCard.tsx",
-      "sha256": "43d7c32021583f383adc0bbb08a514bdff8cc2c48a32e90713fec206d1ab7b92"
+      "sha256": "0c4dc84280e00e9548eaa2cbbe9f219c1befef6b131d00ac2a3d901ec4c80cb6"
     },
     {
       "path": "src/components/products/TechnicalTable.tsx",
-      "sha256": "0bb7bec59411027c52a87cf5233da7e9018daf6708c225bb6ce1f64959d11b4a"
+      "sha256": "1a60b172d0c22fb3cc7e0135c0bc9549c833a75d6faef2407bbc3d92ae91a613"
     },
     {
       "path": "src/components/navigation/Header.tsx",
-      "sha256": "1487d645036c1bf4bbf06adc839309748dac183aae58cec5ed1573b3df1ac3bd"
+      "sha256": "21b1013994556fa06950d026370437b2a0a8e1db9911406ce681787cf9f11800"
     },
     {
       "path": "src/components/navigation/Footer.tsx",
-      "sha256": "b8aaaa97864f9e6c5229809ae837dbe5c63a2a119a218c7ec2dd16601239641a"
+      "sha256": "81d87c42a6464e44540c55ffbb30f67317327a5e6f8b38ffe99b8332df384b95"
     },
     {
       "path": "src/components/inquiry/InquiryProvider.tsx",
@@ -108,7 +113,7 @@
     },
     {
       "path": "src/components/inquiry/RFQForm.tsx",
-      "sha256": "c95621ba3425abf5b0956b4649a047ebbddfb5a1f20b2b663315e02d8da4823f"
+      "sha256": "589bd2006e1898199ebd3dac9a5f949caedb128a2601bf8db6cf5e8367eedf5d"
     },
     {
       "path": "src/components/ui/SupportingVisual.tsx",
@@ -152,7 +157,7 @@
     },
     {
       "path": "src/app/products/page.tsx",
-      "sha256": "688455428a81ee6443eed7e5e4dfd1523f192ff8f96af4d9bcd23b0be0d83bfa"
+      "sha256": "889eaf9b98521ceba980b26134f08399f51698afb26123544ee48ca01219633c"
     },
     {
       "path": "src/app/products/products.css",
@@ -164,7 +169,7 @@
     },
     {
       "path": "src/components/products/CatalogLink.tsx",
-      "sha256": "05083b02b8092d58830bcb77af7a21d66c2810dde8bbacc002b71f852b8006b9"
+      "sha256": "119ffb72b8697cf85274b6774594c89b21c2dd54f61abd0aff85b4dd4e8e0b1e"
     },
     {
       "path": "src/components/products/ProductDimensions.tsx",
@@ -176,11 +181,11 @@
     },
     {
       "path": "src/components/products/ProductFinder.tsx",
-      "sha256": "a618cb40fb31b6a96b4c6c3ecbba032c2270caa4df94f824f2cfaf1ac7a85fba"
+      "sha256": "dd9719e1f719a3dc8021d597b0c5b75f4bd4f1e223e337d08623247ac2abd50a"
     },
     {
       "path": "src/components/products/ProductPreview.tsx",
-      "sha256": "52a7229c49741393815e602e87189dcdab3bd0109b660e002d27440fdc147b52"
+      "sha256": "7374c7309cd4a90cc6e6e296bdafaca82ab87d5fede0d187a2a9146dda1ef744"
     },
     {
       "path": "src/data/products.ts",

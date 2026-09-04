@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { ProductCard } from "@/components/products/ProductCard";
 import { Arrow } from "@/components/ui/Arrow";
@@ -10,7 +11,7 @@ function AboutHero() {
     <section className="about-hero" aria-labelledby="about-page-title">
       <div className="shell">
         <nav className="about-breadcrumb" aria-label="Breadcrumb">
-          <ol><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">About Us</li></ol>
+          <ol><li><Link href="/">Home</Link></li><li aria-hidden="true">/</li><li aria-current="page">About Us</li></ol>
         </nav>
         <div className="about-hero-grid">
           <div className="about-hero-copy">
@@ -19,8 +20,8 @@ function AboutHero() {
             <p className="about-hero-headline">Industrial Hinge Manufacturing Built Around Practical Requirements</p>
             <p>{aboutCompany.name} manufactures industrial weld-on hinges and supports published standard products and customer-specific requirements.</p>
             <div className="about-hero-actions">
-              <a href="/products" className="button button-primary">Explore Products <Arrow /></a>
-              <a href="/#rfq" className="button button-outline">Discuss Your Requirement <Arrow /></a>
+              <Link href="/products" className="button button-primary">Explore Products <Arrow /></Link>
+              <Link href="/#rfq" className="button button-outline">Discuss Your Requirement <Arrow /></Link>
             </div>
             <div className="about-hero-tags" aria-label="Company focus">
               <span>Weld-on hinges</span><span>Catalog specifications</span><span>Custom requirements</span>
@@ -74,7 +75,7 @@ function ProductRange() {
           title={<span id="about-products-title">A Focused Hinge Product Range</span>}
           description="Review representative catalog families below, then continue to the complete product range for published sizes and technical references."
         >
-          <a href="/products" className="text-link section-heading-link">Explore All Hinges <Arrow diagonal /></a>
+          <Link href="/products" className="text-link section-heading-link">Explore All Hinges <Arrow diagonal /></Link>
         </SectionHeading>
         <div className="product-grid about-product-grid">
           {aboutProducts.map((family, index) => (
@@ -89,7 +90,7 @@ function ProductRange() {
         </div>
         <div className="about-products-footer">
           <p>Additional catalog families include Round, Gasket, Square and Flag hinge configurations.</p>
-          <a href="/products" className="button button-outline">Explore All Hinges <Arrow /></a>
+          <Link href="/products" className="button button-outline">Explore All Hinges <Arrow /></Link>
         </div>
       </div>
     </section>

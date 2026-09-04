@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getProduct, getProductExamples, productHref, type ProductDimension } from "@/data/products";
 import type { ResourceComparisonTableBlock, ResourceProductTableBlock } from "@/content/resources/types";
 import { Arrow } from "@/components/ui/Arrow";
@@ -24,7 +25,7 @@ export function ResourceProductTable({ block }: { block: ResourceProductTableBlo
     <div className="technical-table-wrap" tabIndex={0} role="region" aria-label={block.title}>
       <table className="technical-table resource-product-table">
         <thead><tr><th scope="col">Product family</th><th scope="col">Structure</th><th scope="col">Published entry</th><th scope="col">Published weight</th><th scope="col">Source</th></tr></thead>
-        <tbody>{rows.map(({ product, record }) => <tr key={`${product.id}-${record.id}`}><th scope="row"><a href={productHref(product.id)}>{product.name}<Arrow /></a></th><td>{record.structure}</td><td>{formatPublishedEntry(record)}</td><td>{record.weightG ? `${record.weightG} g` : "Not printed"}</td><td>Catalog p{record.sourcePage}</td></tr>)}</tbody>
+        <tbody>{rows.map(({ product, record }) => <tr key={`${product.id}-${record.id}`}><th scope="row"><Link href={productHref(product.id)}>{product.name}<Arrow /></Link></th><td>{record.structure}</td><td>{formatPublishedEntry(record)}</td><td>{record.weightG ? `${record.weightG} g` : "Not printed"}</td><td>Catalog p{record.sourcePage}</td></tr>)}</tbody>
       </table>
     </div>
   </section>;

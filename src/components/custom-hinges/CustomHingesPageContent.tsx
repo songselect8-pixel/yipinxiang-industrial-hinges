@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { ProductCard } from "@/components/products/ProductCard";
 import { Arrow } from "@/components/ui/Arrow";
@@ -28,7 +29,7 @@ function WhenStandardSizesAreNotEnough() {
           title={<span id="custom-scenarios-title">When Standard Sizes Are Not Enough</span>}
           description="A custom discussion starts when the published size, structure or mounting arrangement does not describe the requirement you need reviewed."
         >
-          <a href="/products" className="text-link section-heading-link">Browse standard hinges <Arrow diagonal /></a>
+          <Link href="/products" className="text-link section-heading-link">Browse standard hinges <Arrow diagonal /></Link>
         </SectionHeading>
         <div className="custom-scenario-grid">
           {customScenarios.map((scenario, index) => <article key={scenario.title}><span>0{index + 1}</span><h3>{scenario.title}</h3><p>{scenario.description}</p></article>)}
@@ -50,7 +51,7 @@ function StartWithWhatYouHave() {
         <div className="custom-input-grid">
           {requirementInputs.map((input, index) => <article key={input.title}><span>0{index + 1}</span><div><h3>{input.title}</h3><p>{input.description}</p></div></article>)}
         </div>
-        <div className="custom-input-note"><p>Available information can be reviewed before quotation. It does not guarantee that an unlisted configuration can be produced. <a href="/resources#custom-manufacturing">Read the custom hinge guides</a> before preparing your request.</p><a href="#rfq" className="text-link">Send what you have <Arrow /></a></div>
+        <div className="custom-input-note"><p>Available information can be reviewed before quotation. It does not guarantee that an unlisted configuration can be produced. <Link href="/resources#custom-manufacturing">Read the custom hinge guides</Link> before preparing your request.</p><Link href="#rfq" className="text-link">Send what you have <Arrow /></Link></div>
       </div>
     </section>
   );
@@ -102,7 +103,7 @@ function StandardOrCustom() {
             <tbody>{customComparison.map((row) => <tr key={row.criterion}><th scope="row">{row.criterion}</th><td>{row.standard}</td><td>{row.custom}</td></tr>)}</tbody>
           </table>
         </div>
-        <div className="custom-comparison-actions"><a href="/products" className="button button-outline">Browse Standard Hinges <Arrow /></a><a href="#rfq" className="button button-primary">Send Your Requirement <Arrow /></a></div>
+        <div className="custom-comparison-actions"><Link href="/products" className="button button-outline">Browse Standard Hinges <Arrow /></Link><Link href="#rfq" className="button button-primary">Send Your Requirement <Arrow /></Link></div>
       </div>
     </section>
   );
@@ -117,7 +118,7 @@ function CustomProductFamilies() {
           title={<span id="custom-product-families-title">Product Families With Customization Support</span>}
           description="The following catalog families contain an explicit customization statement. The requested dimensions and structure still require review."
         >
-          <a href="/applications" className="text-link section-heading-link">Review applications <Arrow diagonal /></a>
+          <Link href="/applications" className="text-link section-heading-link">Review applications <Arrow diagonal /></Link>
         </SectionHeading>
         <div className="custom-product-grid">
           {customProductIds.map((id, index) => {
@@ -155,7 +156,7 @@ function DimensionalChecking() {
           <h2 id="custom-quality-title">Dimensional Checks During Production</h2>
           <p>Confirmed dimensions and checking requirements provide a reference during production. No tolerance value, inspection percentage or test result is published.</p>
           <div className="custom-quality-points">{qualityPoints.map((point) => <div key={point.title}><h3>{point.title}</h3><p>{point.description}</p></div>)}</div>
-          <a href="#rfq" className="text-link">Share checking requirements <Arrow diagonal /></a>
+          <Link href="#rfq" className="text-link">Share checking requirements <Arrow diagonal /></Link>
         </div>
         <SupportingVisual asset="quality" sizes="(max-width: 599px) calc(100vw - 40px), (max-width: 899px) 620px, 50vw" />
       </div>
@@ -190,13 +191,13 @@ export function CustomHingesPageContent() {
     <>
       <section className="custom-page-hero" aria-labelledby="custom-page-title">
         <div className="shell">
-          <nav className="custom-breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">Custom Hinges</li></ol></nav>
+          <nav className="custom-breadcrumb" aria-label="Breadcrumb"><ol><li><Link href="/">Home</Link></li><li aria-hidden="true">/</li><li aria-current="page">Custom Hinges</li></ol></nav>
           <div className="custom-hero-layout">
             <div className="custom-hero-copy">
               <Eyebrow>Made to requirement</Eyebrow>
               <h1 id="custom-page-title">Custom Weld-On Hinges <span>Built Around Your Requirements</span></h1>
               <p>Send us your required dimensions, hinge structure or technical drawing for review.</p>
-              <div className="custom-hero-actions"><a href="#rfq" className="button button-primary">Send Your Drawing <Arrow /></a><a href="#start-with-what-you-have" className="button button-outline">Discuss Your Requirement <Arrow /></a></div>
+              <div className="custom-hero-actions"><Link href="#rfq" className="button button-primary">Send Your Drawing <Arrow /></Link><Link href="#start-with-what-you-have" className="button button-outline">Discuss Your Requirement <Arrow /></Link></div>
               <div className="custom-hero-specs"><span>Drawing</span><span>Dimensions</span><span>Structure</span><span>Application</span></div>
             </div>
             <SupportingVisual asset="engineering" className="custom-hero-visual" sizes="(max-width: 599px) 100vw, 48vw" />

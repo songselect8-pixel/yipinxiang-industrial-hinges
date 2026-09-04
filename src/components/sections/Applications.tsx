@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useInquiry } from "@/components/inquiry/InquiryProvider";
 import { Arrow } from "@/components/ui/Arrow";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -30,24 +31,24 @@ export function Applications() {
     <section id="applications" className="section applications-section" aria-labelledby="applications-title">
       <div className="shell">
         <SectionHeading eyebrow="Industrial applications" title={<span id="applications-title">Built for Industrial Applications</span>} description="Start with your application. We’ll discuss the hinge type, dimensions and installation requirements your project calls for.">
-          <a href="#rfq" className="text-link section-heading-link">Discuss your application <Arrow diagonal /></a>
+          <Link href="#rfq" className="text-link section-heading-link">Discuss your application <Arrow diagonal /></Link>
         </SectionHeading>
         <div className="application-image-grid">
           {applications.map((application) => (
-            <a href="#rfq" className="application-image-card" key={application.name} aria-label={`Discuss ${application.name}`} onClick={() => beginInquiry({ product: application.family, size: "", application: application.name })}>
+            <Link href="#rfq" className="application-image-card" key={application.name} aria-label={`Discuss ${application.name}`} onClick={() => beginInquiry({ product: application.family, size: "", application: application.name })}>
               <SupportingVisual asset={application.image} sizes="(max-width: 599px) 100vw, 50vw" />
               <div className="application-image-copy">
                 <h3>{application.name}</h3>
                 <p>{application.description}</p>
                 <span className="text-link">Discuss this application <Arrow /></span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
         <div className="application-selection-note">
           <p>Illustrative application views. Final suitability depends on the selected model, dimensions and installation requirements.</p>
           <nav className="application-text-links" aria-label="Additional industrial applications">
-            {additionalApplications.map((application) => <a key={application} href="#rfq" className="text-link" aria-label={`Discuss ${application}`} onClick={() => beginInquiry({ product: "custom", size: "", application })}>{application}</a>)}
+            {additionalApplications.map((application) => <Link key={application} href="#rfq" className="text-link" aria-label={`Discuss ${application}`} onClick={() => beginInquiry({ product: "custom", size: "", application })}>{application}</Link>)}
           </nav>
         </div>
       </div>

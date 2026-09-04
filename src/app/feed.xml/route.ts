@@ -1,6 +1,8 @@
 import { getPublishedResources } from "@/content/resources";
 import { site } from "@/data/site";
 
+export const dynamic = "force-static";
+
 const baseUrl = (process.env.SITE_URL || "http://127.0.0.1:3000").replace(/\/$/, "");
 
 function escapeXml(value: string) {

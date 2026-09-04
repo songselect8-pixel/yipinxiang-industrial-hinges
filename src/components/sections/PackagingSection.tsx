@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SupportingVisual } from "@/components/ui/SupportingVisual";
@@ -18,7 +19,7 @@ export function PackagingSection() {
             <p className="eyebrow"><span aria-hidden="true" />Packaging & shipping</p>
             <h3>Specify the packing with the product.</h3>
             <p>Inner cartons, film protection and outer packing form part of the documented methods. Tell us your hinge series, order quantity and packing requirements.</p>
-            <a href="#rfq" className="text-link">Discuss your packing requirements <Arrow /></a>
+            <Link href="#rfq" className="text-link">Discuss your packing requirements <Arrow /></Link>
           </div>
           <SupportingVisual asset="packaging" sizes="(max-width: 599px) 100vw, (min-width: 1200px) 600px, 55vw" />
         </div>

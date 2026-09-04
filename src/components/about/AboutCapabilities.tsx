@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
@@ -13,7 +14,7 @@ function ManufacturingFoundation() {
           title={<span id="about-manufacturing-title">Manufacturing Behind the Product</span>}
           description="The actual factory photograph identifies the company. The supporting process scene explains the catalog-listed manufacturing context without serving as company evidence."
         >
-          <a href="/manufacturing" className="text-link section-heading-link">Explore Manufacturing <Arrow diagonal /></a>
+          <Link href="/manufacturing" className="text-link section-heading-link">Explore Manufacturing <Arrow diagonal /></Link>
         </SectionHeading>
         <div className="about-manufacturing-media">
           <figure data-asset-kind="company-photo" className="about-factory-evidence">
@@ -38,7 +39,7 @@ function ManufacturingFoundation() {
             </article>
           ))}
         </div>
-        <a href="/manufacturing" className="button button-outline about-manufacturing-cta">Explore Manufacturing <Arrow /></a>
+        <Link href="/manufacturing" className="button button-outline about-manufacturing-cta">Explore Manufacturing <Arrow /></Link>
       </div>
     </section>
   );
@@ -58,7 +59,7 @@ function StandardCustom() {
               <span>0{index + 1} · {item.label}</span>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
-              <a href={item.href} className="text-link">{item.cta} <Arrow /></a>
+              <Link href={item.href} className="text-link">{item.cta} <Arrow /></Link>
               <small>Reference sources · p{item.sourcePages.join(" / ")}</small>
             </article>
           ))}
@@ -80,7 +81,7 @@ function ApplicationsSummary() {
           title={<span id="about-applications-title">Built for Industrial Applications</span>}
           description="Use the catalog application groups as a starting point, then confirm the hinge family and dimensions for the requirement."
         >
-          <a href="/applications" className="text-link section-heading-link">Explore Applications <Arrow diagonal /></a>
+          <Link href="/applications" className="text-link section-heading-link">Explore Applications <Arrow diagonal /></Link>
         </SectionHeading>
         <div className="about-application-grid">
           <article className="about-application-card">
@@ -92,7 +93,7 @@ function ApplicationsSummary() {
             <div><span>Catalog application group · p6</span><h3>Gates, Trailer Doors & Ramps</h3><p>{gateApplications.map((item) => item.name).join(" · ")}</p></div>
           </article>
         </div>
-        <div className="about-application-footer"><p>Application context supports selection discussion; confirm the product family and dimensions for the requirement.</p><a href="/applications" className="button button-outline">Explore Applications <Arrow /></a></div>
+        <div className="about-application-footer"><p>Application context supports selection discussion; confirm the product family and dimensions for the requirement.</p><Link href="/applications" className="button button-outline">Explore Applications <Arrow /></Link></div>
       </div>
     </section>
   );

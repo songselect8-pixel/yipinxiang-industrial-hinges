@@ -51,7 +51,7 @@
   "files": [
     {
       "path": "src/app/manufacturing/page.tsx",
-      "sha256": "5226b0814f61e0ca980ebe8abf29fef2f291aff2035cfd59386b17ba5b25601e"
+      "sha256": "0ad790c3cdbaeddcd533408b5a435a348c9b73c315ae1a457d63c6469354e04a"
     },
     {
       "path": "src/app/manufacturing/manufacturing.css",
@@ -59,19 +59,19 @@
     },
     {
       "path": "src/components/manufacturing/ManufacturingPageContent.tsx",
-      "sha256": "1da99909383bdc7bce35b070d3e0a1f6166e4d1fddbbd66c42a91c4ba123da74"
+      "sha256": "1b83aa19a9bdb66475919347fe41ceca9ea5693e51196ec469caf2ef320e12c7"
     },
     {
       "path": "src/components/manufacturing/ManufacturingCapabilities.tsx",
-      "sha256": "f73ac3da2500c2619269610c536a2eb4306f1e25627df33bb30cce5272111fc3"
+      "sha256": "ad0398c1a6a18f6d54a9b2cb345fee81dc3271d4dc07680bd5ba30bc24e1a71a"
     },
     {
       "path": "src/components/manufacturing/ManufacturingEvidence.tsx",
-      "sha256": "7fd6d4c882601d181213b81e9ef3f5d2512b90b7aaee94e31113dca17db479ba"
+      "sha256": "980e9e6afc219b9f51c2a4b040d52efe37e4f1bc0fd947a10ed87503b14db7ec"
     },
     {
       "path": "src/components/manufacturing/ManufacturingRFQSection.tsx",
-      "sha256": "cc30c251d962f4d48bee1d9bbf09b2cb0c1ea60a60d6cdfb46a9d0eb0967a6f6"
+      "sha256": "f9c15f58a73483632f9a0e2f4ea116bced99e33a852fec7f94c4317c97480177"
     },
     {
       "path": "src/data/manufacturing.ts",

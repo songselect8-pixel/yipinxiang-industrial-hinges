@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
 import { aboutLogistics, aboutNavigation, aboutQualityPoints, buyerReasons, workingApproach } from "@/data/about";
@@ -10,7 +11,7 @@ function QualitySummary() {
           <Eyebrow>Quality approach</Eyebrow>
           <h2 id="about-quality-title">Checks During Production</h2>
           <p>Published specifications and confirmed requirement dimensions provide the reference. The catalog describes tools developed to support checks during production.</p>
-          <a href="/quality" className="text-link">Explore Quality Control <Arrow diagonal /></a>
+          <Link href="/quality" className="text-link">Explore Quality Control <Arrow diagonal /></Link>
         </div>
         <div className="about-quality-points">
           {aboutQualityPoints.map((item, index) => (
@@ -103,7 +104,7 @@ function InternalNavigation() {
       <div className="shell about-continue-row">
         <div><Eyebrow>Next step</Eyebrow><h2 id="about-continue-title">Continue Exploring</h2></div>
         <nav aria-label="Continue exploring the website">
-          {aboutNavigation.map((item) => <a key={item.href} href={item.href}>{item.label} <Arrow /></a>)}
+          {aboutNavigation.map((item) => <Link key={item.href} href={item.href}>{item.label} <Arrow /></Link>)}
         </nav>
       </div>
     </section>

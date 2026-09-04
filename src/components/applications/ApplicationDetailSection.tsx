@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { ApplicationInquiryLink } from "./ApplicationInquiryLink";
 import { Arrow } from "@/components/ui/Arrow";
@@ -41,13 +42,13 @@ export function ApplicationDetailSection({ group, reversed = false }: { group: A
             <nav aria-label={`Relevant hinge families for ${group.title}`}>
               {group.productIds.map((id) => {
                 const product = getProduct(id)!;
-                return <a href={productHref(id)} key={id}>{product.name}<Arrow /></a>;
+                return <Link href={productHref(id)} key={id}>{product.name}<Arrow /></Link>;
               })}
             </nav>
           </div>
 
           <div className="application-detail-actions">
-            <a href={group.filterHref} className="button button-outline">Explore available hinge types <Arrow /></a>
+            <Link href={group.filterHref} className="button button-outline">Explore available hinge types <Arrow /></Link>
             <ApplicationInquiryLink product={group.inquiryProductId} application={group.shortTitle}>Ask for selection help</ApplicationInquiryLink>
           </div>
         </div>

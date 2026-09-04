@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ContactRFQForm } from "@/components/contact/ContactRFQForm";
 import { Arrow, Plus } from "@/components/ui/Arrow";
 import { Eyebrow, SectionHeading } from "@/components/ui/SectionHeading";
@@ -20,7 +21,7 @@ function ContactHero() {
     <section className="contact-hero" aria-labelledby="contact-page-title">
       <div className="shell">
         <nav className="contact-breadcrumb" aria-label="Breadcrumb">
-          <ol><li><a href="/">Home</a></li><li aria-hidden="true">/</li><li aria-current="page">Contact</li></ol>
+          <ol><li><Link href="/">Home</Link></li><li aria-hidden="true">/</li><li aria-current="page">Contact</li></ol>
         </nav>
         <div className="contact-hero-grid">
           <div className="contact-hero-copy">
@@ -28,8 +29,8 @@ function ContactHero() {
             <h1 id="contact-page-title">Tell Us About Your Hinge Requirement</h1>
             <p>Send us your hinge type, dimensions, quantity, application or technical drawing. The more information you provide, the easier it is to understand your requirement.</p>
             <div className="contact-hero-actions">
-              <a className="button button-primary" href="#contact-rfq">Start Your RFQ <Arrow /></a>
-              <a className="button button-outline" href="/products">Explore Products <Arrow /></a>
+              <Link className="button button-primary" href="#contact-rfq">Start Your RFQ <Arrow /></Link>
+              <Link className="button button-outline" href="/products">Explore Products <Arrow /></Link>
             </div>
           </div>
           <aside className="contact-hero-ledger" aria-label="Useful RFQ information">
@@ -55,8 +56,8 @@ function ContactDetails() {
         <dl className="contact-details-grid">
           <div className="contact-company-detail"><dt>Company</dt><dd>{contactDetails.company}</dd><small>Catalog contact · p{contactDetails.sourcePage}</small></div>
           <div><dt>Contact</dt><dd>{contactDetails.contact}</dd></div>
-          <div><dt>Email</dt><dd><a href={`mailto:${contactDetails.email}`}>{contactDetails.email}<Arrow diagonal /></a></dd></div>
-          <div><dt>Phone</dt><dd><a href={`tel:${contactDetails.phoneHref}`}>{contactDetails.phoneDisplay}<Arrow diagonal /></a></dd></div>
+          <div><dt>Email</dt><dd><Link href={`mailto:${contactDetails.email}`}>{contactDetails.email}<Arrow diagonal /></Link></dd></div>
+          <div><dt>Phone</dt><dd><Link href={`tel:${contactDetails.phoneHref}`}>{contactDetails.phoneDisplay}<Arrow diagonal /></Link></dd></div>
         </dl>
         <p className="contact-details-note"><span aria-hidden="true" />For product inquiries, please include the hinge type, required dimensions, application and estimated quantity when possible.</p>
       </div>
@@ -80,8 +81,8 @@ function RFQSection({ submissionEndpoint }: { submissionEndpoint: string | null 
           </ol>
           <div className="contact-rfq-direct">
             <span>Direct inquiry</span>
-            <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
-            <a href={`tel:${contactDetails.phoneHref}`}>{contactDetails.phoneDisplay}</a>
+            <Link href={`mailto:${contactDetails.email}`}>{contactDetails.email}</Link>
+            <Link href={`tel:${contactDetails.phoneHref}`}>{contactDetails.phoneDisplay}</Link>
           </div>
         </div>
         <ContactRFQForm submissionEndpoint={submissionEndpoint} />
@@ -99,7 +100,7 @@ function SelectionSupport() {
           <h2 id="contact-selection-title">Not Sure Which Hinge You Need?</h2>
           <p>Provide the application, required dimensions, estimated quantity and any available photo or drawing for discussion.</p>
         </div>
-        <a className="button button-outline" href="#contact-rfq">Send Your Requirement <Arrow /></a>
+        <Link className="button button-outline" href="#contact-rfq">Send Your Requirement <Arrow /></Link>
       </div>
     </section>
   );
@@ -135,13 +136,13 @@ function StandardOrCustom() {
             <span>01 · Standard product</span>
             <h3>Already know the hinge type?</h3>
             <p>Review the catalog families and published technical information before sending your inquiry.</p>
-            <a className="text-link" href="/products">Browse Products <Arrow /></a>
+            <Link className="text-link" href="/products">Browse Products <Arrow /></Link>
           </article>
           <article>
             <span>02 · Custom requirement</span>
             <h3>Need a different size or structure?</h3>
             <p>Start with your required dimensions, structural requirement or technical drawing for review.</p>
-            <a className="text-link" href="/custom-hinges">Explore Custom Hinges <Arrow /></a>
+            <Link className="text-link" href="/custom-hinges">Explore Custom Hinges <Arrow /></Link>
           </article>
         </div>
       </div>
@@ -158,10 +159,10 @@ function ApplicationEntry() {
           title={<span id="contact-applications-title">Explore by Application</span>}
           description="Start with the installation context when the hinge family or model is not yet known."
         >
-          <a className="text-link section-heading-link" href="/applications">Explore Applications <Arrow diagonal /></a>
+          <Link className="text-link section-heading-link" href="/applications">Explore Applications <Arrow diagonal /></Link>
         </SectionHeading>
         <nav className="contact-application-links" aria-label="Application pages">
-          {contactApplicationEntries.map((entry, index) => <a key={entry.label} href={entry.href}><span>{String(index + 1).padStart(2, "0")}</span><strong>{entry.label}</strong><Arrow /></a>)}
+          {contactApplicationEntries.map((entry, index) => <Link key={entry.label} href={entry.href}><span>{String(index + 1).padStart(2, "0")}</span><strong>{entry.label}</strong><Arrow /></Link>)}
         </nav>
         <div className="contact-response-note"><span>After submission</span><p>Once your requirement is submitted, the information can be reviewed for further discussion.</p></div>
       </div>
@@ -198,7 +199,7 @@ function ContactCTA() {
         <div><Eyebrow light>Start the discussion</Eyebrow><h2 id="contact-final-title">Ready to Discuss Your Hinge Requirement?</h2></div>
         <div className="contact-final-copy">
           <p>Send the product reference, dimensions, quantity, application or available technical files.</p>
-          <div><a className="button button-primary" href="#contact-rfq">Submit Your RFQ <Arrow /></a><a className="button contact-final-secondary" href="/products">Browse Hinges <Arrow /></a></div>
+          <div><Link className="button button-primary" href="#contact-rfq">Submit Your RFQ <Arrow /></Link><Link className="button contact-final-secondary" href="/products">Browse Hinges <Arrow /></Link></div>
         </div>
       </div>
     </section>

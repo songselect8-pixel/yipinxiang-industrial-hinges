@@ -1,3 +1,4 @@
+import { joinSiteUrl } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { ApplicationsPageContent } from "@/components/applications/ApplicationsPageContent";
 import { InquiryProvider } from "@/components/inquiry/InquiryProvider";
@@ -36,8 +37,8 @@ export default function ApplicationsPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", baseUrl).href },
-      { "@type": "ListItem", position: 2, name: "Applications", item: new URL("/applications", baseUrl).href },
+      { "@type": "ListItem", position: 1, name: "Home", item: joinSiteUrl(baseUrl, "/") },
+      { "@type": "ListItem", position: 2, name: "Applications", item: joinSiteUrl(baseUrl, "/applications") },
     ],
   };
 

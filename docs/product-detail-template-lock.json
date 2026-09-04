@@ -40,15 +40,15 @@
   "baselineFiles": [
     {
       "path": "src/components/products/detail/ProductDetailTemplate.tsx",
-      "sha256": "11ac57f15f44e5ae7cfb9272bf4b8de48350928ce20481adf19d36c27efc72f2"
+      "sha256": "255fd7bd3f0200522d887d3a37da70a62b5701481eb7cdbe99fbfb3bd6937b33"
     },
     {
       "path": "src/components/products/detail/ProductGallery.tsx",
-      "sha256": "e21643b329c408dbc0ae9232f0dceb195cdbd8948133aea9a07fb11019d71d0b"
+      "sha256": "cb8264ff2e8455f0544f0860e9d69e87cbea0443f40a97b50968234660455733"
     },
     {
       "path": "src/components/products/detail/ImageEnlarger.tsx",
-      "sha256": "77b9fc46c2a872d478c515cec479cab95534ed550d05c23ada88e32492845c66"
+      "sha256": "65a7b7e9a7be76f10c0715283570809a46c540f611206cfcfd29ec93a50cc531"
     },
     {
       "path": "src/app/products/bearing-weld-on-hinges/product-detail.css",
@@ -56,15 +56,15 @@
     },
     {
       "path": "src/components/products/TechnicalTable.tsx",
-      "sha256": "0bb7bec59411027c52a87cf5233da7e9018daf6708c225bb6ce1f64959d11b4a"
+      "sha256": "1a60b172d0c22fb3cc7e0135c0bc9549c833a75d6faef2407bbc3d92ae91a613"
     },
     {
       "path": "src/components/products/ProductCard.tsx",
-      "sha256": "43d7c32021583f383adc0bbb08a514bdff8cc2c48a32e90713fec206d1ab7b92"
+      "sha256": "0c4dc84280e00e9548eaa2cbbe9f219c1befef6b131d00ac2a3d901ec4c80cb6"
     },
     {
       "path": "src/components/inquiry/RFQForm.tsx",
-      "sha256": "c95621ba3425abf5b0956b4649a047ebbddfb5a1f20b2b663315e02d8da4823f"
+      "sha256": "589bd2006e1898199ebd3dac9a5f949caedb128a2601bf8db6cf5e8367eedf5d"
     },
     {
       "path": "src/components/sections/RFQSection.tsx",
@@ -80,15 +80,15 @@
     },
     {
       "path": "src/app/products/[slug]/page.tsx",
-      "sha256": "28aca3115d5faf15ead7a2139e6f8fba81101d972d4e2af9da23360c9cfb91e7"
+      "sha256": "6a49ff3c9343579c5de615ab5f9e46e874082656c313f9e1fb3747804f922c82"
     },
     {
       "path": "src/app/products/bearing-weld-on-hinges/page.tsx",
-      "sha256": "e79839cc58b7f8da89d96609b2fa4c908c2c67f8c9b3041f9f9904471fba0023"
+      "sha256": "62e674910aa63bb1030fbf8820e8a98fa34f774501a3e706612198136f60232b"
     },
     {
       "path": "src/components/products/detail/ProductRelatedGuides.tsx",
-      "sha256": "bf796ad3d2f0c4945b20c12ce81993e18a9ab5ad0ff25c4c847952b661a115ca"
+      "sha256": "31f1e096757ee95628670199b90db96ae19582beda8978cdec6525c6509cce06"
     }
   ],
   "resourcesExtensionRevalidatedAt": "2026-09-02T22:53:59.6791237+08:00",

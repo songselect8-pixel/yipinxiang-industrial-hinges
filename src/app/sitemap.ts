@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { getPublishedResources } from "@/content/resources";
 
+export const dynamic = "force-static";
+
 const baseUrl = (process.env.SITE_URL || "http://127.0.0.1:3000").replace(/\/$/, "");
 
 // The full site remains behind the pre-launch robots gate. Approved Resources

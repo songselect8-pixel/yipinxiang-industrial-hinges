@@ -130,7 +130,7 @@
   "files": [
     {
       "path": "src/app/custom-hinges/page.tsx",
-      "sha256": "f333e6f30c4d65a5bc389f349cd7ef0014b05e0d9bf476eaba187e9a5357bd32"
+      "sha256": "3d6864910280ac0d16b3d309e1a6be6339928c289d64c761722846a860280645"
     },
     {
       "path": "src/app/custom-hinges/custom-hinges.css",
@@ -138,7 +138,7 @@
     },
     {
       "path": "src/components/custom-hinges/CustomHingesPageContent.tsx",
-      "sha256": "009faec56cdcbcfa2f7dc7ee06f0ccf0f62bc564b4e743b55dd97e1ef839303a"
+      "sha256": "eed8e7c813592dd72cc93bd46920353a358c61d07998647b856811807f3631f7"
     },
     {
       "path": "src/components/custom-hinges/CustomRFQSection.tsx",

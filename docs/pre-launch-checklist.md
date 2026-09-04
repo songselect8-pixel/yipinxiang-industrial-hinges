@@ -2,6 +2,13 @@
 
 This preview is not ready for public production traffic until every blocking item below is complete.
 
+## Hosted preview
+
+- GitHub Pages preview: `https://songselect8-pixel.github.io/yipinxiang-industrial-hinges/`
+- Keep this deployment under the existing global `noindex` and robots gate until the production blockers are complete.
+- A push to `main` must pass the GitHub Pages build and static route/link verification before it is published.
+- The hosted preview does not change the RFQ delivery blocker below.
+
 ## RFQ delivery — blocking
 
 **CRITICAL BEFORE PRODUCTION:**  

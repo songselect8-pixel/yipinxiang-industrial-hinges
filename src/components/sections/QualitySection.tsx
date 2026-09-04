@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow } from "@/components/ui/SectionHeading";
 import { SupportingVisual } from "@/components/ui/SupportingVisual";
@@ -15,7 +16,7 @@ export function QualitySection() {
             <div><h3>In-Process Checks</h3><p>Product checking tools are used during production.</p></div>
             <div><h3>Consistent Production</h3><p>Clear specifications provide a reference for production checks.</p></div>
           </div>
-          <a href="#rfq" className="text-link">Share your quality requirements <Arrow diagonal /></a>
+          <Link href="#rfq" className="text-link">Share your quality requirements <Arrow diagonal /></Link>
         </div>
         <SupportingVisual asset="quality" className="quality-inspection-visual" />
       </div>

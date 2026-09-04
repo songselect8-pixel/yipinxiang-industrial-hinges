@@ -1,3 +1,4 @@
+import { joinSiteUrl } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { CustomHingesPageContent } from "@/components/custom-hinges/CustomHingesPageContent";
 import { CustomRFQSection } from "@/components/custom-hinges/CustomRFQSection";
@@ -36,8 +37,8 @@ export default function CustomHingesPage() {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", baseUrl).href },
-      { "@type": "ListItem", position: 2, name: "Custom Hinges", item: new URL("/custom-hinges", baseUrl).href },
+      { "@type": "ListItem", position: 1, name: "Home", item: joinSiteUrl(baseUrl, "/") },
+      { "@type": "ListItem", position: 2, name: "Custom Hinges", item: joinSiteUrl(baseUrl, "/custom-hinges") },
     ],
   };
 

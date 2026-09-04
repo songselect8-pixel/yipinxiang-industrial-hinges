@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow } from "@/components/ui/SectionHeading";
@@ -15,7 +16,7 @@ export function CustomManufacturing() {
             <h2 id="custom-title">Your drawing. <br />Our starting point.</h2>
             <p>Not every requirement fits a standard profile. Share your drawing, dimensions or application, and let’s discuss a hinge built around your needs.</p>
             <div className="custom-request-list"><span>Application & installation</span><span>Dimensions & configuration</span><span>Quantity & packaging requirements</span></div>
-            <a href="#rfq" className="button button-primary">Discuss Your Hinge Requirement <Arrow /></a>
+            <Link href="#rfq" className="button button-primary">Discuss Your Hinge Requirement <Arrow /></Link>
           </div>
           <figure className="drawing-figure">
             <div className="drawing-heading"><span>ENGINEERING REFERENCE</span><span>20 TYPE</span></div>

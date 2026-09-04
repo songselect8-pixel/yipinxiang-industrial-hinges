@@ -62,7 +62,7 @@
   "files": [
     {
       "path": "src/app/about-us/page.tsx",
-      "sha256": "9e9a8ebcb95b49801fcea093ff29acf93638a3b86aa6db39ceaaa67e8e2caef9"
+      "sha256": "747926eceee8eeb03e2544081f09499f9756b74e8161e71bb6b8e8f37cec8c12"
     },
     {
       "path": "src/app/about-us/about-us.css",
@@ -70,19 +70,19 @@
     },
     {
       "path": "src/components/about/AboutPageContent.tsx",
-      "sha256": "d9ab719ad60d069d8daf68f7245678d64a9aa1689a1d0e2e9411ce2b52e35f56"
+      "sha256": "eefe73c858cb9863a5b67e87ff8e076a4da5032e44afff0b1920354472ea0a11"
     },
     {
       "path": "src/components/about/AboutCapabilities.tsx",
-      "sha256": "bb4d000f01be8acddb4fd8fbec4889c3603b2d78b39cd3727a29945e9ee17a03"
+      "sha256": "c856434ad4b456b3bf84150d47f9765d929c6627e80c56a943eb45a42c88501b"
     },
     {
       "path": "src/components/about/AboutCompanyEvidence.tsx",
-      "sha256": "aadeb869a47b74d0154bb413f291967fc9fb34b264193120e7ebc5b89b7a5a95"
+      "sha256": "048a26959a32bdb22820a91eb04d68fe80aaab12f9a56466578c5d44db62d00f"
     },
     {
       "path": "src/components/about/AboutCTASection.tsx",
-      "sha256": "db88e7e4e86787bd6fab92dde48db415f8254defe66230d053e192d955726bd8"
+      "sha256": "d5388a72e310d98412289391a3a9a95a37af5c15546af69c1d865e5850c250c5"
     },
     {
       "path": "src/data/about.ts",
@@ -98,7 +98,7 @@
     },
     {
       "path": "src/components/products/ProductCard.tsx",
-      "sha256": "43d7c32021583f383adc0bbb08a514bdff8cc2c48a32e90713fec206d1ab7b92"
+      "sha256": "0c4dc84280e00e9548eaa2cbbe9f219c1befef6b131d00ac2a3d901ec4c80cb6"
     }
   ]
 }

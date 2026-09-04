@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useInquiry } from "@/components/inquiry/InquiryProvider";
 import { Arrow } from "@/components/ui/Arrow";
 import type { CatalogFamily, CatalogVariant } from "@/data/catalog";
@@ -23,7 +24,7 @@ export function TechnicalTable({ family, records, inquiryHref }: { family: Catal
           const isSelected = selection.product === family.id && selection.size === size;
           return <tr key={record.id} className={isSelected ? "selected-row" : ""} data-source-record={record.id}>
             {isParameterTable ? <><th scope="row">{record.model}</th>{parameterKeys.map((key) => <td key={key}>{record.parameters?.[key]}</td>)}</> : <><th scope="row">{record.size}</th><td>{record.weightG}</td></>}
-            <td className="table-action"><a href={inquiryHref?.(record) ?? "#rfq"} aria-label={`Select ${record.model === "TBD" ? record.size : record.model} ${family.shortName} for RFQ`} onClick={() => { if (!inquiryHref) beginInquiry({ product: family.id, size, application: selection.application }); }}>{isSelected ? "Selected" : "Select size"}<Arrow /></a></td>
+            <td className="table-action"><Link href={inquiryHref?.(record) ?? "#rfq"} aria-label={`Select ${record.model === "TBD" ? record.size : record.model} ${family.shortName} for RFQ`} onClick={() => { if (!inquiryHref) beginInquiry({ product: family.id, size, application: selection.application }); }}>{isSelected ? "Selected" : "Select size"}<Arrow /></Link></td>
           </tr>;
         })}</tbody>
       </table>

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { families } from "@/data/catalog";
 import { useInquiry } from "./InquiryProvider";
@@ -95,7 +96,7 @@ export function RFQForm({
       <p className="form-preview-note"><span aria-hidden="true" />{fixedProductName ? "Product page preview · RFQs and files are not sent." : `${contextLabel} preview · RFQs are not sent.`}</p>
       {(Object.keys(errors).length > 0 || previewReady) && <div ref={resultRef} tabIndex={-1} className={previewReady ? "form-notice" : "form-error-summary"} role={previewReady ? "status" : "alert"}>
         <strong>{previewReady ? "Request prepared, not sent." : "Please check the highlighted fields."}</strong>
-        {previewReady ? <p>{fixedProductName ? "Inquiry delivery is not configured. Your entries and any selected drawing remain in this browser tab; nothing has been sent or uploaded." : `This ${contextLabel.toLowerCase()} is a preview. Inquiry delivery is not configured, so no RFQ has been sent. Your entries are preserved below.`}</p> : <ul>{Object.entries(errors).map(([name, message]) => <li key={name}><a href={`#rfq-${name}`}>{message}</a></li>)}</ul>}
+        {previewReady ? <p>{fixedProductName ? "Inquiry delivery is not configured. Your entries and any selected drawing remain in this browser tab; nothing has been sent or uploaded." : `This ${contextLabel.toLowerCase()} is a preview. Inquiry delivery is not configured, so no RFQ has been sent. Your entries are preserved below.`}</p> : <ul>{Object.entries(errors).map(([name, message]) => <li key={name}><Link href={`#rfq-${name}`}>{message}</Link></li>)}</ul>}
       </div>}
       <div className="form-grid">
         <div className="field"><label htmlFor="rfq-name">Name <span>*</span></label><input id="rfq-name" name="name" autoComplete="name" required value={fields.name} onChange={(event) => changeField("name", event.target.value)} maxLength={120} placeholder="Your name" {...errorProps("name")} />{errorMessage("name")}</div>

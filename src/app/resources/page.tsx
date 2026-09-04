@@ -1,3 +1,4 @@
+import { joinSiteUrl } from "@/lib/site-url";
 import type { Metadata } from "next";
 import { InquiryProvider } from "@/components/inquiry/InquiryProvider";
 import { Footer } from "@/components/navigation/Footer";
@@ -21,8 +22,8 @@ export default function ResourcesPage() {
   const breadcrumb = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: new URL("/", baseUrl).href },
-      { "@type": "ListItem", position: 2, name: "Resources", item: new URL("/resources", baseUrl).href },
+      { "@type": "ListItem", position: 1, name: "Home", item: joinSiteUrl(baseUrl, "/") },
+      { "@type": "ListItem", position: 2, name: "Resources", item: joinSiteUrl(baseUrl, "/resources") },
     ],
   };
   return <div id="resources-top" className="resources-page"><InquiryProvider><Header currentPage="resources" rfqHref="/contact#rfq" /><main id="main-content"><ResourcesIndexContent /></main><Footer currentPage="resources" rfqHref="/contact#rfq" /></InquiryProvider><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumb).replace(/</g, "\u003c") }} /></div>;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { Arrow } from "@/components/ui/Arrow";
 import { Eyebrow } from "@/components/ui/SectionHeading";
@@ -27,7 +28,7 @@ export function FactorySection() {
           <SupportingVisual asset="manufacturing" sizes="(max-width: 599px) 100vw, 50vw" />
         </div>
         <div className="factory-processes">{processes.map((process, index) => <div key={process.title}><span>0{index + 1}</span><div><h3>{process.title}</h3><p>{process.detail}</p></div></div>)}</div>
-        <a href="#rfq" className="text-link factory-cta">Talk to us about your project <Arrow diagonal /></a>
+        <Link href="#rfq" className="text-link factory-cta">Talk to us about your project <Arrow diagonal /></Link>
       </div>
     </section>
   );

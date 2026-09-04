@@ -17,7 +17,7 @@ export function ImageEnlarger({ media, className, children }: { media: ProductMe
       <div className="image-dialog-heading"><Eyebrow>{media.kind === "photograph" ? "Product photography" : "Original catalog drawing"}</Eyebrow><h2 id={titleId}>{media.label}</h2></div>
       <div className="image-dialog-toolbar"><p>{media.caption}</p><div aria-label="Image magnification"><button type="button" aria-pressed={!actualSize} onClick={() => setActualSize(false)}>Fit</button><button type="button" aria-pressed={actualSize} onClick={() => setActualSize(true)}>100%</button></div></div>
       <div className={`image-dialog-canvas${actualSize ? " is-actual-size" : ""}`} tabIndex={0} role="region" aria-label="Enlarged image, scroll to inspect at 100 percent">
-        <Image src={media.src} alt={media.alt} width={media.width} height={media.height} unoptimized style={actualSize ? { width: media.width, height: media.height } : undefined} />
+        <Image src={media.src} alt={media.alt} width={media.width} height={media.height} unoptimized={!process.env.NEXT_PUBLIC_BASE_PATH} style={actualSize ? { width: media.width, height: media.height } : undefined} />
       </div>
       <p className="image-dialog-help">{actualSize ? "Original image size. Scroll within the image to inspect all details." : "Full image shown. Choose 100% to inspect the original image."}</p>
     </CatalogDialog>
